@@ -1,0 +1,478 @@
+.guarantees
+    display: block
+    margin-bottom: 55px
+.guarantees__carousel
+    display: block
+    position: relative
+    .owl-prev
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-top: 1px solid #f6931d
+        border-left: 1px solid #f6931d
+        position: absolute
+        top: 46%
+        left: 0
+        transform: rotate(-45deg) translateY(-50%)
+        font-size: 0
+    .owl-next
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-top: 1px solid #f6931d
+        border-right: 1px solid #f6931d
+        position: absolute
+        top: 46%
+        right: 0
+        transform: rotate(45deg) translateY(-50%)
+        font-size: 0
+.guarantees__item
+    padding: 18px 0 0 77px
+    margin-bottom: 33px
+    position: relative
+.guarantees__icon
+    position: absolute
+    top: 0
+    left: -1px
+    font-size: 56px
+    color: $txt-black
+.guarantees__title-wrap
+    margin-bottom: 21px
+.guarantees__title
+    font-family: $font-base
+    font-size: 22px
+.guarantees__paragraph
+    font-family: $font-base
+    font-size: 15px
+    line-height: 21px
+    margin-bottom: 19px
+.guarantees__text
+    p
+        &:last-child
+            margin-bottom: 0
+
+.certificates__title-wrap
+    margin-bottom: 20px
+.certificates__title
+    display: none
+    font-family: $font-base
+    font-size: 11px
+    text-transform: uppercase
+.certificates__carousel
+    display: block
+    padding-left: 77px
+    font-size: 0
+    .owl-prev
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-top: 1px solid #f6931d
+        border-left: 1px solid #f6931d
+        position: absolute
+        top: 43%
+        left: 0
+        transform: rotate(-45deg) translateY(-50%)
+        font-size: 0
+    .owl-next
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-top: 1px solid #f6931d
+        border-right: 1px solid #f6931d
+        position: absolute
+        top: 43%
+        right: 0
+        transform: rotate(45deg) translateY(-50%)
+        font-size: 0
+.certificates__item
+    display: inline-block
+    width: 14.5%
+    margin-right: 2%
+    margin-bottom: 15px
+    font-size: 14px
+    &:nth-child(6n)
+        margin-right: 0
+.certificates__img
+    width: 100%
+
+
+
+.popup
+    width: 505px
+    min-height: 400px
+    padding: 57px 48px 50px 61px
+    background: #fff
+    border: 1px solid #000
+    position: absolute
+    top: 100px
+    left: 50%
+    transform: translateX(-50%)
+    &_big
+        width: 830px
+        min-height: 640px
+.popup__btn-back
+    display: none
+    width: 20px
+    height: 20px
+    padding: 0
+    background: none
+    border: none
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    text-align: center
+    font-size: 20px
+    outline: none
+    cursor: pointer
+.popup__btn-close
+    width: 22px
+    height: 22px
+    padding: 0
+    background: none
+    border: none
+    position: absolute
+    top: 20px
+    right: 20px
+    text-align: center
+    font-size: 20px
+    outline: none
+    cursor: pointer
+.popup__header
+    margin-bottom: 38px
+    position: relative
+.popup__title
+    text-transform: uppercase
+    font-family: "ms-bold"
+    font-size: 30px
+.popup__body
+    font-size: 0
+.popup__left
+    display: inline-block
+    vertical-align: top
+    width: 200px
+    font-size: 13px
+.popup__right
+    display: inline-block
+    vertical-align: top
+    width: calc(100% - 200px)
+    font-size: 13px
+.popup__label
+    margin-bottom: 12px
+.popup__link
+    display: inline-block
+    border-bottom: 1px dotted #8d8e8f
+    margin-bottom: 20px
+.popup__input-wrap
+    width: 160px
+    margin-bottom: 30px
+    &_mb-10px
+        margin-bottom: 10px
+.popup__btn-close-left
+    display: none
+    width: 22px
+    height: 22px
+    padding: 0
+    background: none
+    border: none
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    text-align: center
+    outline: none
+    cursor: pointer
+
+.popup-search
+    display: block
+    width: 250px
+    margin-bottom: 50px
+.input-search-wrap
+    position: relative
+    input[type="text"]
+        padding-left: 35px
+        &:focus
+            padding-left: 15px
+            padding-right: 35px
+            + .btn-search_popup
+                left: auto
+                right: 10px
+                color: $txt-grey
+
+.popup-cities
+    font-size: 0
+.popup-cities__left
+    display: inline-block
+    vertical-align: top
+    width: 31.5%
+    font-size: 12px
+.popup-cities__right
+    display: inline-block
+    vertical-align: top
+    width: 68.5%
+    font-size: 13px
+.popup-cities__title
+    padding-right: 10px
+    margin-bottom: 15px
+    text-transform: uppercase
+    font-family: "ms-reg"
+    font-size: 12px
+    color: $txt-grey
+
+.cities-list
+    font-family: "ms-reg"
+    font-size: 13px
+    color: $txt-black
+.cities-list__item
+    padding-right: 10px
+    margin-bottom: 7px
+.cities-list__link
+    transition: all 0.3s ease 0s
+    &:hover, &:focus, &:active, &:visited
+        &:hover, &:focus, &:active
+            color: $orange
+.cities-list-wrap
+    display: flex
+    justify-content: space-between
+
+.btn-search
+    width: 20px
+    height: 20px
+    padding: 0
+    background: none
+    border: none
+    text-align: center
+    font-size: 0
+    outline: none
+    cursor: pointer
+    &_popup
+        position: absolute
+        top: 50%
+        left: 10px
+        transform: translateY(-50%)
+        color: $txt-black
+.btn-search__icon
+    font-size: 20px
+
+.btn
+    &_mw-128px
+        min-width: 128px
+
+.text-13px
+    font-size: 13px
+    &_gray
+        line-height: 17px
+        color: $txt-grey
+    &_black
+        line-height: 17px
+        color: $txt-black
+
+.advantage
+    padding-left: 44px
+.advantage__icon
+    display: block
+    margin-bottom: 12px
+    font-size: 23px
+    color: $txt-grey
+.advantage__item
+    margin-bottom: 22px
+    &:last-child
+        margin-bottom: 0
+
+.no-orders__text
+    margin-bottom: 27px
+    font-family: "ms-reg"
+    font-size: 15px
+    line-height: 23px
+    color: $txt-grey
+    .no-orders__paragraph
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0
+
+.agreement__iframe-wrap
+    width: 550px
+    height: 300px
+    margin-bottom: 35px
+.agreement__text
+    margin-bottom: 30px
+    font-family: "ms-reg"
+    font-size: 13px
+    color: $txt-grey
+    .agreement__paragraph
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0
+.agreement__btn-wrap
+    &_download
+        display: none
+        margin-bottom: 20px
+    &_pay
+        display: none
+
+
+
+@media screen and (max-width: 992px)
+    .popup_big
+        width: 100%
+        padding: 15px 10px
+        .popup__header
+            padding-left: 34px
+            margin-bottom: 22px
+        .popup__title
+            font-size: 18px
+        .popup__btn-close
+            display: none
+    .popup-search
+        width: 100%
+        margin-bottom: 40px
+        position: relative
+        &:before
+            content: ""
+            display: block
+            height: 1px
+            background-color: #e5e5e5
+            position: absolute
+            top: calc(100% + 15px)
+            left: -10px
+            right: -10px
+    .popup__btn-close-left
+        display: block
+    .popup-cities
+        padding: 0 35px
+
+@media screen and (max-width: 768px)
+    .guarantees
+        margin-bottom: 35px
+    .guarantees__carousel
+        padding: 18px 26px 0 26px
+    .guarantees__item
+        padding: 0
+        margin-bottom: 0
+    .guarantees__title-wrap
+        padding-left: 26px
+        margin-bottom: 14px
+        position: relative
+    .guarantees__title
+        font-size: 16px
+    .guarantees__icon
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        font-size: 19px
+    .guarantees__text
+        br
+            display: none
+    .guarantees__paragraph
+        font-size: 13px
+        line-height: 18px
+
+    .certificates__title-wrap
+        margin-bottom: 17px
+    .certificates__title
+        display: block
+        font-family: $font-base
+        color: $txt-grey
+    .certificates__carousel
+        padding: 0 26px 0 26px
+    .certificates__item
+        width: 100%
+        margin: 0
+
+    .popup-cities
+        padding: 0
+    .popup-cities__title
+        display: none
+    .popup-cities__left
+        display: block
+        width: 100%
+    .popup-cities__right
+        display: block
+        width: 100%
+
+    .cities-list-wrap
+        display: block
+        width: 100%
+    .cities-list
+        font-size: 14px
+    .cities-list__item
+        padding-right: 20px
+        margin-bottom: 26px
+        position: relative
+        &:before
+            content: ""
+            display: block
+            width: 10px
+            height: 10px
+            position: absolute
+            top: 50%
+            right: 5px
+            border-top: 1px solid #b7b8b9
+            border-right: 1px solid #b7b8b9
+            transform: translateY(-50%) rotate(45deg)
+
+    .no-orders__text
+        margin-bottom: 10px
+        font-size: 13px
+        line-height: 19px
+        color: $txt-black
+        br
+            display: none
+    .no-orders__btn-wrap
+        .btn
+            width: 100%
+
+@media screen and (max-width: 640px)
+    .popup
+        width: 100%
+        padding: 15px 10px
+    .popup__header
+        padding-left: 34px
+        margin-bottom: 22px
+    .popup__title
+        font-size: 18px
+    .popup__btn-back
+        display: block
+    .popup__btn-close
+        display: none
+    .popup__left
+        display: block
+        width: 100%
+        margin-bottom: 30px
+    .popup__right
+        display: block
+        width: 100%
+    .popup__label
+        margin-bottom: 14px
+    .popup__input-wrap
+        display: block
+        width: 100%
+        margin-bottom: 27px
+    .popup__btn-wrap
+        .btn
+            width: 100%
+
+    .advantage
+        padding-left: 0
+    .advantage__item
+        margin-bottom: 19px
+
+    .agreement__iframe-wrap
+        width: 100%
+    .agreement__btn-wrap
+        .btn
+            width: 100%
+
+@media screen and (max-width: 480px)
+    .agreement__iframe-wrap
+        display: none
+    .agreement__text
+        margin-bottom: 15px
+        color: $txt-black
+    .agreement__btn-wrap
+        &_download
+            display: block
+        &_next
+            display: none
+        &_pay
+            display: block

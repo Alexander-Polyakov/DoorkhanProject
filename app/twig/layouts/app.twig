@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block pageTitle %}{% endblock %}</title>
+
+    <!-- Stylesheets -->
+    {% include "stylesheets.twig" %}
+</head>
+<body>
+<div class="site-wrapper">
+    <!-- Header block -->
+    {% include "header.twig" with { "secondHeader": secondHeader } %}
+    <!-- Header block end -->
+
+    <!-- Block content -->
+    {% block content %}{% endblock %}
+    <!-- Block content end -->
+
+    <!-- Footer block -->
+    {% include "footer.twig" %}
+    <!-- Footer block end -->
+
+		<!-- Popups block -->
+		{% include "../widgets/popups.twig" %}
+		<!-- Popups block end -->
+</div>
+    <!-- Scripts -->
+    {% include "scripts.twig" %}
+
+    {% block pageScripts %}{% endblock %}
+</body>
+</html>

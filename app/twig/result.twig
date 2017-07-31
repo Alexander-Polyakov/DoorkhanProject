@@ -1,0 +1,244 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %} Итог{% endblock %}
+
+
+{% block content %}
+    {% include "widgets/site-header.twig" %}
+
+    <main class="main">
+        <div class="container">
+
+            <div class="main__breadcrumbs">
+                {% include "widgets/breadcrumb.twig" %}
+            </div>
+
+            <div class="main__title">
+                <div class="main-title">
+                    <a class="main-title__link" href="#"></a>
+                    <h1 class="main-title__text">ЗАКАЗ № 123 123 321 ОПЛАЧЕН</h1>
+                </div>
+            </div>
+
+
+            <div class="main__content">
+                <div class="result-page">
+                    <div class="result-page__first-info">Доставка заказа: Гедеоновка, Смоленская область</div>
+                    <div class="result-page__contacts">
+                        <div class="contacts-section contacts-section_result">
+                            <div class="contacts-section__title">Ваш региональный дилер свяжется с вами с течение 3 рабочих дней:</div>
+                            <div class="contacts-section__content">
+                                <p class="ff-bold">Дилер – Москва</p>
+                                <p>Нахимовский пр., 24, г. Москва, 117209</p>
+                                <p>E-mail: vorota@mail.ru</p>
+                                <p>Skype: vorota</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-page__table">
+                        <div class="product-table" role="tablist">
+                            <div class="product-table__th">
+                                <div class="product-table__td">Артикул</div>
+                                <div class="product-table__td">Товар</div>
+                                <div class="product-table__td">Штук</div>
+                                <div class="product-table__td">Цена</div>
+                            </div>
+                            <div class="product-table__tr product-table__tr_collapse-toggle collapsed" role="tab" data-toggle="collapse" data-target="#characteristics" aria-expanded="true" aria-controls="characteristics">
+                                <div class="product-table__td">
+                                    <p class="product-table__td-title-mobile">Артикул</p>
+                                    <p>DUS-462</p>
+                                </div>
+                                <div class="product-table__td">
+                                    <p class="product-table__td-title-mobile">Товар</p>
+                                    <p><a href="#">СДВИЖНЫЕ ВОРОТА REVOLUTION 4000х2000 ММ</a></p>
+                                </div>
+                                <div class="product-table__td">
+                                    <p class="product-table__td-title-mobile">Штук</p>
+                                    <p>1</p>
+                                </div>
+                                <div class="product-table__td">
+                                    <p class="product-table__td-title-mobile">Цена</p>
+                                    <p class="product-table__td-price">37 230 &#8381;</p>
+                                </div>
+                            </div>
+                            <div class="product-table__tr product-table__tr_collapse-content">
+                                <div class="product-table__td"></div>
+                                <div class="product-table__td">
+                                    <div id="characteristics" class="characteristics-list characteristics-list_result collapse" role="tabpanel" aria-expanded="true">
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Материал полотна</div>
+                                            <div class="characteristics-list__cell">Сендвич-панели</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Материал окантовки</div>
+                                            <div class="characteristics-list__cell">Экструдированный алюминиевый профиль</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Покраска окантовки</div>
+                                            <div class="characteristics-list__cell">Порошковая краска</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Поддерживающие крепежные элементы</div>
+                                            <div class="characteristics-list__cell">-</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Прочность крепления ручек</div>
+                                            <div class="characteristics-list__cell">не менее 1000 Н</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Сопротивление ветровой нагрузке</div>
+                                            <div class="characteristics-list__cell">Св. 700 Па</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Изоляция воздушного шума</div>
+                                            <div class="characteristics-list__cell">35 дБ</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Безотказность</div>
+                                            <div class="characteristics-list__cell">мин. 20 000 циклов открытия/закрытия</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Усилие ручного открытия и закрытия ворот</div>
+                                            <div class="characteristics-list__cell">не более 150 Н</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Сопротивление удару твердым телом</div>
+                                            <div class="characteristics-list__cell">Е - 10 <br> Дж h - 1 м <br> m шара - 1 кг</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-table__td"></div>
+                                <div class="product-table__td"></div>
+                            </div>
+
+                            <div class="product-table__tr product-table__tr_collapse-toggle collapsed" role="tab" data-toggle="collapse" data-target="#characteristics2" aria-expanded="true" aria-controls="characteristics2">
+                                <div class="product-table__td">
+                                    <p class="product-table__td-title-mobile">Артикул</p>
+                                    <p>DUS-462</p>
+                                </div>
+                                <div class="product-table__td">
+                                    <p class="product-table__td-title-mobile">Товар</p>
+                                    <p><a href="#">СДВИЖНЫЕ ВОРОТА REVOLUTION 4000х2000 ММ</a></p>
+                                </div>
+                                <div class="product-table__td">
+                                    <p class="product-table__td-title-mobile">Штук</p>
+                                    <p>1</p>
+                                </div>
+                                <div class="product-table__td">
+                                    <p class="product-table__td-title-mobile">Цена</p>
+                                    <p class="product-table__td-price">37 230 &#8381;</p>
+                                </div>
+                            </div>
+                            <div class="product-table__tr product-table__tr_collapse-content">
+                                <div class="product-table__td"></div>
+                                <div class="product-table__td">
+                                    <div id="characteristics2" class="characteristics-list characteristics-list_result collapse" role="tabpanel" aria-expanded="true">
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Материал полотна</div>
+                                            <div class="characteristics-list__cell">Сендвич-панели</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Материал окантовки</div>
+                                            <div class="characteristics-list__cell">Экструдированный алюминиевый профиль</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Покраска окантовки</div>
+                                            <div class="characteristics-list__cell">Порошковая краска</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Поддерживающие крепежные элементы</div>
+                                            <div class="characteristics-list__cell">-</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Прочность крепления ручек</div>
+                                            <div class="characteristics-list__cell">не менее 1000 Н</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Сопротивление ветровой нагрузке</div>
+                                            <div class="characteristics-list__cell">Св. 700 Па</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Изоляция воздушного шума</div>
+                                            <div class="characteristics-list__cell">35 дБ</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Безотказность</div>
+                                            <div class="characteristics-list__cell">мин. 20 000 циклов открытия/закрытия</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Усилие ручного открытия и закрытия ворот</div>
+                                            <div class="characteristics-list__cell">не более 150 Н</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Сопротивление удару твердым телом</div>
+                                            <div class="characteristics-list__cell">Е - 10 <br> Дж h - 1 м <br> m шара - 1 кг</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-table__td"></div>
+                                <div class="product-table__td"></div>
+                            </div>
+                        </div>
+                        <div class="result-table-total">
+                            <div class="result-table-total__tr result-table-total__tr_bg_beige">
+                                <div class="result-table-total__td">Итоговая стоимость с монтажом</div>
+                                <div class="result-table-total__td result-table-total__td_price">138 978 &#8381; </div>
+                            </div>
+                            <div class="result-table-total__tr mobile-hidden">
+                                <div class="result-table-total__td result-table-total__td_vat">В том числе НДС</div>
+                                <div class="result-table-total__td result-table-total__td_vat-price">7 994 &#8381;</div>
+                            </div>
+                            <div class="result-table-total__tr mobile-hidden">
+                                <div class="result-table-total__td">
+                                    <div class="delivery-descr delivery-descr_table">
+                                        <div class="delivery-descr__title">Стоимость доставки из Смоленска в Гедеоновку</div>
+                                        <div class="delivery-descr__content">
+                                            <div class="delivery-descr__text">в стоимость не включена, может быть выполнена дилером по цене</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="result-table-total__td result-table-total__td_delivery-price">14 &#8381;/км</div>
+                            </div>
+                            <div class="result-table-total__tr mobile-hidden">
+                                <div class="result-table-total__td"></div>
+                                <div class="result-table-total__td">
+                                    <a class="btn btn_orange" href="#">распечатать</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="desktop-hidden mobile-visible">
+                            <div class="result-mobile-form">
+                                <div class="result-mobile-form__section">
+                                    <div class="result-mobile-form__descr">
+                                        <p class="us-text">Доставка: Смоленск → <a class="dotted-link" href="#">Гедеоновка</a> </p>
+                                        <p class="us-text us-text_color_gray">14 р/км, в стоимость не включена</p>
+                                    </div>
+                                    <p>
+                                        <a class="btn btn_orange btn_mobile-full" href="#">ПЕРЕЙТИ К МОИМ ЗАКАЗАМ</a>
+                                    </p>
+                                </div>
+                                <div class="result-mobile-form__section">
+                                    <form class="subscribe-form" action="#">
+                                        <div class="subscribe-form__line">
+                                            <p class="result-mobile-form__title">Отправить</p>
+                                        </div>
+                                        <div class="subscribe-form__line">
+                                            <input class="st-input" type="text" placeholder="Электронная почта">
+                                        </div>
+                                        <div class="subscribe-form__line">
+                                            <button class='btn btn_gray btn_mobile-full'>Отправить</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

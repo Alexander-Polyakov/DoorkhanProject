@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Попапы</title>
+
+    <!-- Stylesheets -->
+    <!--build:css css/vendor.css-->
+    <!--bower:css-->
+    <link rel="stylesheet" href="bower_components/bootstrap-grid-only/css/grid24.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!--endbower-->
+    <!--endbuild-->
+
+    <!--build:css css/common.css-->
+    <link rel="stylesheet" href="css/app.css">
+    <!--endbuild-->
+
+
+
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <!-- Header block -->
+
+
+        <div class="top-panel">
+            <div class="container">
+                <div class="top-panel__container">
+                    <div class="top-panel__section">
+                        <div class="selected-city">
+                            <div class="selected-city__default">
+                                <div class="selected-city__main-text">
+                                    <a class="selected-city__city-name" data-open-popup="cities" href="#">Гедеоновка</a>
+                                </div>
+                                <div class="selected-city__more-text">Представительство: Смоленск</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-panel__section">
+                        <div class="header-nav">
+                            <div class="header-nav__item">
+                                <form class="search">
+                                    <button class="search__button"></button>
+                                </form>
+                            </div>
+                            <div class="header-nav__item">
+                                <div class="for-clients">
+                                    <a class="tdu-link" href="#" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Для покупателей</a>
+                                    <div class="for-clients__dropdown" aria-labelledby="drop1">
+                                        <ul class="for-clients-menu">
+                                            <li class="for-clients-menu__item">
+                                                <a class="for-clients-menu__link" href="#">Гарантии</a>
+                                            </li>
+                                            <li class="for-clients-menu__item">
+                                                <a class="for-clients-menu__link" href="#">Как заказать</a>
+                                            </li>
+                                            <li class="for-clients-menu__item">
+                                                <a class="for-clients-menu__link" href="#">Контакты</a>
+                                            </li>
+                                            <li class="for-clients-menu__item">
+                                                <a class="for-clients-menu__link" href="#">О компании</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="header-nav__item">
+                                <div class="contacts">
+                                    <div class="contacts__item">
+                                        <a class="contacts-phone" href="tel:+7 495 933 24 00">
+                                            <span class="contacts-phone__text">+7 495 933 24 00</span>
+                                        </a>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <a class="contacts__message" href="#"></a>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <a class="contacts__skype" href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="card-link" href="#">2 товара / 142 000 Р</a>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="out-link" href="#">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-panel-mobile">
+
+            <div class="container">
+                <div class="top-panel-mobile__inner">
+                    <div class="top-panel-mobile__item">
+                        <span class="navbar-toggle">
+                    <i class="navbar-toggle__stripe"></i>
+                    <i class="navbar-toggle__stripe"></i>
+                    <i class="navbar-toggle__stripe"></i>
+                </span>
+                    </div>
+                    <div class="top-panel-mobile__item">
+                        <a href="#" class="mobile-logo">
+                            <img src="images/mobile-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="top-panel-mobile__item">
+                        <div class="mobile-cart-link">
+                            <div class="icon-cart">
+                                <span class="icon-cart__counter">2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-panel-mobile__item">
+                        <div class="mobile-search-toggle">
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Header block end -->
+
+        <!-- Block content -->
+
+        <div class="site-header">
+            <div class="container">
+                <div class="site-header__container">
+                    <div class="site-header__left-popup opened">
+                        <div class="confirmation-city">
+                            <div class="confirmation-city__header">
+                                Ваш город — <span class="ff-bold">Гедеоновка?</span>
+                            </div>
+                            <div class="confirmation-city__content">
+                                <div class="confirmation-city__btn-wrap">
+                                    <a class="btn btn_select-city" href="#">да, верно</a>
+                                </div>
+                                <div class="confirmation-city__btn-wrap">
+                                    <a class="btn btn_select-city" href="#">выбрать другой</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="logo" href="#">
+                        <img src="images/logo.jpg" alt="">
+                    </a>
+                    <nav class="main-nav">
+                        <a class="main-nav__item main-nav__item_active" href="#">
+                            <div class="m-nav-item">
+                                <div class="m-nav-item__header">
+                                    <div class="m-nav-item__circle"></div>
+                                </div>
+                                <div class="m-nav-item__name">Каталог</div>
+                            </div>
+                        </a>
+                        <a class="main-nav__item" href="#">
+                            <div class="m-nav-item">
+                                <div class="m-nav-item__header">
+                                    <div class="m-nav-item__circle"></div>
+                                </div>
+                                <div class="m-nav-item__name">Заказ</div>
+                            </div>
+                        </a>
+                        <a class="main-nav__item " href="#">
+                            <div class="m-nav-item">
+                                <div class="m-nav-item__header">
+                                    <div class="m-nav-item__circle"></div>
+                                </div>
+                                <div class="m-nav-item__name">Оплата</div>
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <div class="container">
+                <div class="page-overlay"></div>
+                <div class="popup popup-city" data-popup="cities">
+                    <div class="page-title-section">
+                        <h1 class="page-title">выберите город</h1>
+                    </div>
+                    <div class="popup-city__search">
+                        <form class="city-search" action="#">
+                            <input class="st-input-text" type="text">
+                            <button class="city-search__button"></button>
+                        </form>
+                    </div>
+                    <div class="list-cities">
+                        <div class="list-cities-section">
+                            <div class="list-cities-section__title">крупные города</div>
+                            <div class="list-cities-section__content">
+                                <ul class="st-list st-list_cities">
+                                    <li class="st-list__item">Москва</li>
+                                    <li class="st-list__item">Санкт-Петербург</li>
+                                    <li class="st-list__item">Владивосток</li>
+                                    <li class="st-list__item">Волгоград</li>
+                                    <li class="st-list__item">Воронеж</li>
+                                    <li class="st-list__item">Екатеринбург</li>
+                                    <li class="st-list__item">Казань</li>
+                                    <li class="st-list__item">Краснодар</li>
+                                    <li class="st-list__item">Красноярск</li>
+                                    <li class="st-list__item">Нижний Новгород</li>
+                                    <li class="st-list__item">Новосибирск</li>
+                                    <li class="st-list__item">Омск</li>
+                                    <li class="st-list__item">Пермь</li>
+                                    <li class="st-list__item">Ростов-на-Дону</li>
+                                    <li class="st-list__item">Самара</li>
+                                    <li class="st-list__item">Хабаровск</li>
+                                    <li class="st-list__item">Челябинск</li>
+                                    <li class="st-list__item">Уфа</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-cities-section">
+                            <div class="list-cities-section__title">другие города</div>
+                            <div class="list-cities-section__content">
+                                <ul class="st-list st-list_cities">
+                                    <li class="st-list__item">Абакан</li>
+                                    <li class="st-list__item">Белгород</li>
+                                    <li class="st-list__item">Благовещенск</li>
+                                    <li class="st-list__item">Вологда</li>
+                                    <li class="st-list__item">Дзержинск</li>
+                                    <li class="st-list__item">Ессентуки</li>
+                                    <li class="st-list__item">Иркутск</li>
+                                    <li class="st-list__item">Кемерово</li>
+                                    <li class="st-list__item">Киров</li>
+                                    <li class="st-list__item">Курган</li>
+                                    <li class="st-list__item">Курск</li>
+                                    <li class="st-list__item">Липецк</li>
+                                    <li class="st-list__item">Нефтекамск</li>
+                                    <li class="st-list__item">Новороссийск</li>
+                                    <li class="st-list__item">Магнитогорск</li>
+                                    <li class="st-list__item">Октябрьский</li>
+                                    <li class="st-list__item">Оренбург</li>
+                                    <li class="st-list__item">Пенза</li>
+                                </ul>
+                                <ul class="st-list st-list_cities">
+                                    <li class="st-list__item">Абакан</li>
+                                    <li class="st-list__item">Белгород</li>
+                                    <li class="st-list__item">Благовещенск</li>
+                                    <li class="st-list__item">Вологда</li>
+                                    <li class="st-list__item">Дзержинск</li>
+                                    <li class="st-list__item">Ессентуки</li>
+                                    <li class="st-list__item">Иркутск</li>
+                                    <li class="st-list__item">Кемерово</li>
+                                    <li class="st-list__item">Киров</li>
+                                    <li class="st-list__item">Курган</li>
+                                    <li class="st-list__item">Курск</li>
+                                    <li class="st-list__item">Липецк</li>
+                                    <li class="st-list__item">Нефтекамск</li>
+                                    <li class="st-list__item">Новороссийск</li>
+                                    <li class="st-list__item">Магнитогорск</li>
+                                    <li class="st-list__item">Октябрьский</li>
+                                    <li class="st-list__item">Оренбург</li>
+                                    <li class="st-list__item">Пенза</li>
+                                </ul>
+                                <ul class="st-list st-list_cities">
+                                    <li class="st-list__item">Абакан</li>
+                                    <li class="st-list__item">Белгород</li>
+                                    <li class="st-list__item">Благовещенск</li>
+                                    <li class="st-list__item">Вологда</li>
+                                    <li class="st-list__item">Дзержинск</li>
+                                    <li class="st-list__item">Ессентуки</li>
+                                    <li class="st-list__item">Иркутск</li>
+                                    <li class="st-list__item">Кемерово</li>
+                                    <li class="st-list__item">Киров</li>
+                                    <li class="st-list__item">Курган</li>
+                                    <li class="st-list__item">Курск</li>
+                                    <li class="st-list__item">Липецк</li>
+                                    <li class="st-list__item">Нефтекамск</li>
+                                    <li class="st-list__item">Новороссийск</li>
+                                    <li class="st-list__item">Магнитогорск</li>
+                                    <li class="st-list__item">Октябрьский</li>
+                                    <li class="st-list__item">Оренбург</li>
+                                    <li class="st-list__item">Пенза</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Block content end -->
+
+        <!-- Footer block -->
+        <footer class="site-footer">
+            <div class="white-footer">
+                <div class="container">
+                    <div class="white-footer__container">
+                        <div class="white-footer__section white-footer__section_sm_hidden">
+                            <div class="contacts">
+                                <div class="contacts__item">
+                                    <span class="contacts__phone">
+                                Позвоните нам:
+                                <a class="contacts__link" href="tel:+7 495 933 24 00">+7 495 933 24 00</a>
+                            </span>
+
+                                </div>
+                                <div class="contacts__item">
+                                    <a class="contacts__message contacts__message_footer" href="#"></a>
+                                </div>
+                                <div class="contacts__item">
+                                    <a class="contacts__skype contacts__skype_footer" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white-footer__section">
+                            <div class="soc-block">
+                                <p class="soc-block__title">Мы в соцсетях:</p>
+                                <nav class="soc-nav">
+                                    <a class="soc-nav__item soc-nav__item_type_youtube" href="#"></a>
+                                    <a class="soc-nav__item soc-nav__item_type_vk" href="#"></a>
+                                    <a class="soc-nav__item soc-nav__item_type_fb" href="#"></a>
+                                    <a class="soc-nav__item soc-nav__item_type_tw" href="#"></a>
+                                    <a class="soc-nav__item soc-nav__item_type_houzz" href="#"></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gray-footer">
+                <div class="container">
+                    <div class="gray-footer-inner">
+                        <div class="gray-footer__section">
+                            <p>© DoorHan, 2016</p>
+                        </div>
+                        <div class="gray-footer__section gray-footer__section_xs_hidden">
+                            <a href="#" class="gray-footer-link">Условия использования</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+
+        <div class="page-overlay"></div>
+        <div class="popup popup-city" data-popup="cities">
+            <div class="page-title-section">
+                <div class="page-title">выберите город</div>
+            </div>
+            <div class="popup-city__search">
+                <form class="city-search" action="#">
+                    <input class="st-input-text" type="text">
+                    <button class="city-search__button"></button>
+                </form>
+            </div>
+            <div class="list-cities">
+                <div class="list-cities-section">
+                    <div class="list-cities-section__title">крупные города</div>
+                    <div class="list-cities-section__content">
+                        <ul class="st-list st-list_cities">
+                            <li class="st-list__item">Москва</li>
+                            <li class="st-list__item">Санкт-Петербург</li>
+                            <li class="st-list__item">Владивосток</li>
+                            <li class="st-list__item">Волгоград</li>
+                            <li class="st-list__item">Воронеж</li>
+                            <li class="st-list__item">Екатеринбург</li>
+                            <li class="st-list__item">Казань</li>
+                            <li class="st-list__item">Краснодар</li>
+                            <li class="st-list__item">Красноярск</li>
+                            <li class="st-list__item">Нижний Новгород</li>
+                            <li class="st-list__item">Новосибирск</li>
+                            <li class="st-list__item">Омск</li>
+                            <li class="st-list__item">Пермь</li>
+                            <li class="st-list__item">Ростов-на-Дону</li>
+                            <li class="st-list__item">Самара</li>
+                            <li class="st-list__item">Хабаровск</li>
+                            <li class="st-list__item">Челябинск</li>
+                            <li class="st-list__item">Уфа</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list-cities-section">
+                    <div class="list-cities-section__title">другие города</div>
+                    <div class="list-cities-section__content">
+                        <ul class="st-list st-list_cities">
+                            <li class="st-list__item">Абакан</li>
+                            <li class="st-list__item">Белгород</li>
+                            <li class="st-list__item">Благовещенск</li>
+                            <li class="st-list__item">Вологда</li>
+                            <li class="st-list__item">Дзержинск</li>
+                            <li class="st-list__item">Ессентуки</li>
+                            <li class="st-list__item">Иркутск</li>
+                            <li class="st-list__item">Кемерово</li>
+                            <li class="st-list__item">Киров</li>
+                            <li class="st-list__item">Курган</li>
+                            <li class="st-list__item">Курск</li>
+                            <li class="st-list__item">Липецк</li>
+                            <li class="st-list__item">Нефтекамск</li>
+                            <li class="st-list__item">Новороссийск</li>
+                            <li class="st-list__item">Магнитогорск</li>
+                            <li class="st-list__item">Октябрьский</li>
+                            <li class="st-list__item">Оренбург</li>
+                            <li class="st-list__item">Пенза</li>
+                        </ul>
+                        <ul class="st-list st-list_cities">
+                            <li class="st-list__item">Абакан</li>
+                            <li class="st-list__item">Белгород</li>
+                            <li class="st-list__item">Благовещенск</li>
+                            <li class="st-list__item">Вологда</li>
+                            <li class="st-list__item">Дзержинск</li>
+                            <li class="st-list__item">Ессентуки</li>
+                            <li class="st-list__item">Иркутск</li>
+                            <li class="st-list__item">Кемерово</li>
+                            <li class="st-list__item">Киров</li>
+                            <li class="st-list__item">Курган</li>
+                            <li class="st-list__item">Курск</li>
+                            <li class="st-list__item">Липецк</li>
+                            <li class="st-list__item">Нефтекамск</li>
+                            <li class="st-list__item">Новороссийск</li>
+                            <li class="st-list__item">Магнитогорск</li>
+                            <li class="st-list__item">Октябрьский</li>
+                            <li class="st-list__item">Оренбург</li>
+                            <li class="st-list__item">Пенза</li>
+                        </ul>
+                        <ul class="st-list st-list_cities">
+                            <li class="st-list__item">Абакан</li>
+                            <li class="st-list__item">Белгород</li>
+                            <li class="st-list__item">Благовещенск</li>
+                            <li class="st-list__item">Вологда</li>
+                            <li class="st-list__item">Дзержинск</li>
+                            <li class="st-list__item">Ессентуки</li>
+                            <li class="st-list__item">Иркутск</li>
+                            <li class="st-list__item">Кемерово</li>
+                            <li class="st-list__item">Киров</li>
+                            <li class="st-list__item">Курган</li>
+                            <li class="st-list__item">Курск</li>
+                            <li class="st-list__item">Липецк</li>
+                            <li class="st-list__item">Нефтекамск</li>
+                            <li class="st-list__item">Новороссийск</li>
+                            <li class="st-list__item">Магнитогорск</li>
+                            <li class="st-list__item">Октябрьский</li>
+                            <li class="st-list__item">Оренбург</li>
+                            <li class="st-list__item">Пенза</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer block end -->
+
+        <!-- Scripts -->
+        <!--build:js js/vendor.js-->
+        <!--bower:js-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+        <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="bower_components/bootstrap-slider/bootstrap-slider.js"></script>
+        <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+        <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
+        <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
+        <!--endbower-->
+        <!--endbuild-->
+
+        <!--build:js js/common.js-->
+        <script src="js/app.js"></script>
+
+        <script src="js/input.mask.js"></script>
+
+        <!--endbuild-->
+    </div>
+</body>
+
+</html>

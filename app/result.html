@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Итог</title>
+
+    <!-- Stylesheets -->
+    <!--build:css css/vendor.css-->
+    <!--bower:css-->
+
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/autocomplete.css">
+    <!--endbower-->
+    <!--endbuild-->
+
+    <!--build:css css/common.css-->
+    <link rel="stylesheet" href="css/app.css">
+    <!--endbuild-->
+
+
+
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <!-- Header block -->
+        <div class="js-top-panel-placeholder top-panel-placeholder"></div>
+        <div class="top-panel-wrapper">
+
+
+            <div class="top-panel">
+                <div class="top-panel__container container">
+                    <div class="top-panel__left">
+                        <div class="selected-city">
+                            <div class="selected-city__default">
+                                <div class="selected-city__main-text">
+                                    <a class="js-open-popup selected-city__city-name" data-open-popup="cities" href="#">Гедеоновка</a>
+                                </div>
+                                <div class="selected-city__more-text">Представительство: Смоленск</div>
+                            </div>
+                        </div>
+                        <form class="js-search-form search">
+                            <div class="js-search-popup search__input-popup">
+                                <input class="js-search-input search__input" type="text">
+                            </div>
+                            <button class="js-search-submit search__button"></button>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="header-nav">
+                            <div class="header-nav__item">
+                                <div class="for-clients">
+                                    <a class="tdu-link" href="#" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Для покупателей</a>
+                                    <div class="for-clients__dropdown" aria-labelledby="drop1">
+                                        <ul class="for-clients-menu">
+                                            <li class="for-clients-menu__item">
+                                                <a class="for-clients-menu__link" href="#">Гарантии</a>
+                                            </li>
+                                            <li class="for-clients-menu__item">
+                                                <a class="for-clients-menu__link" href="#">Как заказать</a>
+                                            </li>
+                                            <li class="for-clients-menu__item">
+                                                <a class="for-clients-menu__link" href="#">Контакты</a>
+                                            </li>
+                                            <li class="for-clients-menu__item">
+                                                <a class="for-clients-menu__link" href="#">О компании</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="header-nav__item">
+                                <div class="contacts">
+                                    <div class="contacts__item">
+                                        <a class="contacts-phone" href="tel:74959332400">
+                                            <span class="contacts-phone__text">+7 495 933 24 00</span>
+                                        </a>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <a class="contacts__message" href="#"></a>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <a class="contacts__skype" href="skype:asdasd"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="card-link" href="#">2 товара / 142 000 Р</a>
+                            </div>
+                            <div class="header-nav__item">
+                                <a class="js-open-popup out-link" data-open-popup="auth" href="#">Выйти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="top-panel-mobile">
+                <div class="top-panel-mobile__container container">
+                    <div class="top-panel-mobile__item top-panel-mobile__item_hamburger">
+                        <span class="js-open-popup navbar-toggle" data-open-popup="mobile-menu">
+                    <i class="navbar-toggle__stripe"></i>
+                    <i class="navbar-toggle__stripe"></i>
+                    <i class="navbar-toggle__stripe"></i>
+                </span>
+                    </div>
+                    <div class="top-panel-mobile__item top-panel-mobile__item_logo">
+                        <a class="mobile-logo" href="#">
+                            <img class="mobile-logo__image" src="images/mobile-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="top-panel-mobile__item top-panel-mobile__item_events">
+                        <div class="menu-events">
+                            <div class="menu-events__item">
+                                <div class="icon icon_cart">
+                                    <span class="icon__cart-counter">2</span>
+                                </div>
+                            </div>
+                            <div class="menu-events__item">
+                                <i class="js-open-popup icon icon_search-event" data-open-popup="mobile-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header block end -->
+
+        <!-- Block content -->
+
+        <div class="site-header">
+            <div class="container">
+                <div class="site-header__container">
+                    <div class="js-popup site-header__left-popup opened" data-popup="confirm-city">
+                        <div class="confirmation-city">
+                            <div class="confirmation-city__header">
+                                Ваш город — <span class="ff-bold">Гедеоновка?</span>
+                            </div>
+                            <div class="confirmation-city__content">
+                                <div class="confirmation-city__btn-wrap">
+                                    <a class="js-close-popup btn btn_select-city-white" href="#">да, верно</a>
+                                </div>
+                                <div class="confirmation-city__btn-wrap">
+                                    <a class="js-open-popup btn btn_select-city" data-open-popup="cities" href="#">выбрать другой</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row__col-left">
+                            <a class="logo" href="#">
+                                <img class="logo__image" src="images/logo.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="row__col-right">
+                            <nav class="main-nav">
+                                <a class="main-nav__item main-nav__item_active" href="#">
+                                    <div class="m-nav-item">
+                                        <div class="m-nav-item__header">
+                                            <div class="m-nav-item__circle"></div>
+                                        </div>
+                                        <div class="m-nav-item__name">Каталог</div>
+                                    </div>
+                                </a>
+                                <a class="main-nav__item" href="#">
+                                    <div class="m-nav-item">
+                                        <div class="m-nav-item__header">
+                                            <div class="m-nav-item__circle"></div>
+                                        </div>
+                                        <div class="m-nav-item__name">Заказ</div>
+                                    </div>
+                                </a>
+                                <a class="main-nav__item " href="#">
+                                    <div class="m-nav-item">
+                                        <div class="m-nav-item__header">
+                                            <div class="m-nav-item__circle"></div>
+                                        </div>
+                                        <div class="m-nav-item__name">Оплата</div>
+                                    </div>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="container">
+
+                <div class="main__breadcrumbs">
+                    <nav class="breadcrumbs">
+                        <a class="breadcrumbs__item breadcrumbs__item_home" href="/">
+                            <i class="icon icon_home"></i>
+                        </a>
+                        <a class="breadcrumbs__item" href="#">покупателям</a>
+                        <span class="breadcrumbs__item breadcrumbs__item_last">гарантии</span>
+                    </nav>
+                </div>
+
+                <div class="main__title">
+                    <div class="main-title">
+                        <a class="main-title__link" href="#"></a>
+                        <h1 class="main-title__text">ЗАКАЗ № 123 123 321 ОПЛАЧЕН</h1>
+                    </div>
+                </div>
+
+
+                <div class="main__content">
+                    <div class="result-page">
+                        <div class="result-page__first-info">Доставка заказа: Гедеоновка, Смоленская область</div>
+                        <div class="result-page__contacts">
+                            <div class="contacts-section contacts-section_result">
+                                <div class="contacts-section__title">Ваш региональный дилер свяжется с вами с течение 3 рабочих дней:</div>
+                                <div class="contacts-section__content">
+                                    <p class="ff-bold">Дилер – Москва</p>
+                                    <p>Нахимовский пр., 24, г. Москва, 117209</p>
+                                    <p>E-mail: vorota@mail.ru</p>
+                                    <p>Skype: vorota</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result-page__table">
+                            <div class="product-table" role="tablist">
+                                <div class="product-table__th">
+                                    <div class="product-table__td">Артикул</div>
+                                    <div class="product-table__td">Товар</div>
+                                    <div class="product-table__td">Штук</div>
+                                    <div class="product-table__td">Цена</div>
+                                </div>
+                                <div class="product-table__tr product-table__tr_collapse-toggle collapsed" role="tab" data-toggle="collapse" data-target="#characteristics" aria-expanded="true" aria-controls="characteristics">
+                                    <div class="product-table__td">
+                                        <p class="product-table__td-title-mobile">Артикул</p>
+                                        <p>DUS-462</p>
+                                    </div>
+                                    <div class="product-table__td">
+                                        <p class="product-table__td-title-mobile">Товар</p>
+                                        <p><a href="#">СДВИЖНЫЕ ВОРОТА REVOLUTION 4000х2000 ММ</a></p>
+                                    </div>
+                                    <div class="product-table__td">
+                                        <p class="product-table__td-title-mobile">Штук</p>
+                                        <p>1</p>
+                                    </div>
+                                    <div class="product-table__td">
+                                        <p class="product-table__td-title-mobile">Цена</p>
+                                        <p class="product-table__td-price">37 230 &#8381;</p>
+                                    </div>
+                                </div>
+                                <div class="product-table__tr product-table__tr_collapse-content">
+                                    <div class="product-table__td"></div>
+                                    <div class="product-table__td">
+                                        <div id="characteristics" class="characteristics-list characteristics-list_result collapse" role="tabpanel" aria-expanded="true">
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Материал полотна</div>
+                                                <div class="characteristics-list__cell">Сендвич-панели</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Материал окантовки</div>
+                                                <div class="characteristics-list__cell">Экструдированный алюминиевый профиль</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Покраска окантовки</div>
+                                                <div class="characteristics-list__cell">Порошковая краска</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Поддерживающие крепежные элементы</div>
+                                                <div class="characteristics-list__cell">-</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Прочность крепления ручек</div>
+                                                <div class="characteristics-list__cell">не менее 1000 Н</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Сопротивление ветровой нагрузке</div>
+                                                <div class="characteristics-list__cell">Св. 700 Па</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Изоляция воздушного шума</div>
+                                                <div class="characteristics-list__cell">35 дБ</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Безотказность</div>
+                                                <div class="characteristics-list__cell">мин. 20 000 циклов открытия/закрытия</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Усилие ручного открытия и закрытия ворот</div>
+                                                <div class="characteristics-list__cell">не более 150 Н</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Сопротивление удару твердым телом</div>
+                                                <div class="characteristics-list__cell">Е - 10 <br> Дж h - 1 м <br> m шара - 1 кг</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-table__td"></div>
+                                    <div class="product-table__td"></div>
+                                </div>
+
+                                <div class="product-table__tr product-table__tr_collapse-toggle collapsed" role="tab" data-toggle="collapse" data-target="#characteristics2" aria-expanded="true" aria-controls="characteristics2">
+                                    <div class="product-table__td">
+                                        <p class="product-table__td-title-mobile">Артикул</p>
+                                        <p>DUS-462</p>
+                                    </div>
+                                    <div class="product-table__td">
+                                        <p class="product-table__td-title-mobile">Товар</p>
+                                        <p><a href="#">СДВИЖНЫЕ ВОРОТА REVOLUTION 4000х2000 ММ</a></p>
+                                    </div>
+                                    <div class="product-table__td">
+                                        <p class="product-table__td-title-mobile">Штук</p>
+                                        <p>1</p>
+                                    </div>
+                                    <div class="product-table__td">
+                                        <p class="product-table__td-title-mobile">Цена</p>
+                                        <p class="product-table__td-price">37 230 &#8381;</p>
+                                    </div>
+                                </div>
+                                <div class="product-table__tr product-table__tr_collapse-content">
+                                    <div class="product-table__td"></div>
+                                    <div class="product-table__td">
+                                        <div id="characteristics2" class="characteristics-list characteristics-list_result collapse" role="tabpanel" aria-expanded="true">
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Материал полотна</div>
+                                                <div class="characteristics-list__cell">Сендвич-панели</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Материал окантовки</div>
+                                                <div class="characteristics-list__cell">Экструдированный алюминиевый профиль</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Покраска окантовки</div>
+                                                <div class="characteristics-list__cell">Порошковая краска</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Поддерживающие крепежные элементы</div>
+                                                <div class="characteristics-list__cell">-</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Прочность крепления ручек</div>
+                                                <div class="characteristics-list__cell">не менее 1000 Н</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Сопротивление ветровой нагрузке</div>
+                                                <div class="characteristics-list__cell">Св. 700 Па</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Изоляция воздушного шума</div>
+                                                <div class="characteristics-list__cell">35 дБ</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Безотказность</div>
+                                                <div class="characteristics-list__cell">мин. 20 000 циклов открытия/закрытия</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Усилие ручного открытия и закрытия ворот</div>
+                                                <div class="characteristics-list__cell">не более 150 Н</div>
+                                            </div>
+                                            <div class="characteristics-list__row">
+                                                <div class="characteristics-list__cell">Сопротивление удару твердым телом</div>
+                                                <div class="characteristics-list__cell">Е - 10 <br> Дж h - 1 м <br> m шара - 1 кг</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-table__td"></div>
+                                    <div class="product-table__td"></div>
+                                </div>
+                            </div>
+                            <div class="result-table-total">
+                                <div class="result-table-total__tr result-table-total__tr_bg_beige">
+                                    <div class="result-table-total__td">Итоговая стоимость с монтажом</div>
+                                    <div class="result-table-total__td result-table-total__td_price">138 978 &#8381; </div>
+                                </div>
+                                <div class="result-table-total__tr mobile-hidden">
+                                    <div class="result-table-total__td result-table-total__td_vat">В том числе НДС</div>
+                                    <div class="result-table-total__td result-table-total__td_vat-price">7 994 &#8381;</div>
+                                </div>
+                                <div class="result-table-total__tr mobile-hidden">
+                                    <div class="result-table-total__td">
+                                        <div class="delivery-descr delivery-descr_table">
+                                            <div class="delivery-descr__title">Стоимость доставки из Смоленска в Гедеоновку</div>
+                                            <div class="delivery-descr__content">
+                                                <div class="delivery-descr__text">в стоимость не включена, может быть выполнена дилером по цене</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="result-table-total__td result-table-total__td_delivery-price">14 &#8381;/км</div>
+                                </div>
+                                <div class="result-table-total__tr mobile-hidden">
+                                    <div class="result-table-total__td"></div>
+                                    <div class="result-table-total__td">
+                                        <a class="btn btn_orange" href="#">распечатать</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="desktop-hidden mobile-visible">
+                                <div class="result-mobile-form">
+                                    <div class="result-mobile-form__section">
+                                        <div class="result-mobile-form__descr">
+                                            <p class="us-text">Доставка: Смоленск → <a class="dotted-link" href="#">Гедеоновка</a> </p>
+                                            <p class="us-text us-text_color_gray">14 р/км, в стоимость не включена</p>
+                                        </div>
+                                        <p>
+                                            <a class="btn btn_orange btn_mobile-full" href="#">ПЕРЕЙТИ К МОИМ ЗАКАЗАМ</a>
+                                        </p>
+                                    </div>
+                                    <div class="result-mobile-form__section">
+                                        <form class="subscribe-form" action="#">
+                                            <div class="subscribe-form__line">
+                                                <p class="result-mobile-form__title">Отправить</p>
+                                            </div>
+                                            <div class="subscribe-form__line">
+                                                <input class="st-input" type="text" placeholder="Электронная почта">
+                                            </div>
+                                            <div class="subscribe-form__line">
+                                                <button class='btn btn_gray btn_mobile-full'>Отправить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Block content end -->
+
+        <!-- Footer block -->
+        <footer class="site-footer">
+            <div class="white-footer">
+                <div class="container">
+                    <div class="white-footer__container">
+                        <div class="white-footer__section white-footer__section_sm_hidden">
+                            <div class="contacts">
+                                <div class="contacts__item">
+                                    <span class="contacts__phone">
+                                Позвоните нам:
+                                <a class="contacts__link" href="tel:+74959332400">+7 495 933 24 00</a>
+                            </span>
+
+                                </div>
+                                <div class="contacts__item">
+                                    <a class="contacts__message contacts__message_footer" href="#"></a>
+                                </div>
+                                <div class="contacts__item">
+                                    <a class="contacts__skype contacts__skype_footer" href="skype:asdasd?chat"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white-footer__section">
+                            <div class="soc-block">
+                                <p class="soc-block__title">Мы в соцсетях:</p>
+                                <nav class="soc-nav">
+                                    <a class="soc-nav__item soc-nav__item_type_youtube" href="#"></a>
+                                    <a class="soc-nav__item soc-nav__item_type_vk" href="#"></a>
+                                    <a class="soc-nav__item soc-nav__item_type_fb" href="#"></a>
+                                    <a class="soc-nav__item soc-nav__item_type_tw" href="#"></a>
+                                    <a class="soc-nav__item soc-nav__item_type_houzz" href="#"></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gray-footer">
+                <div class="container">
+                    <div class="gray-footer-inner">
+                        <div class="gray-footer__section">
+                            <p>© DoorHan, 2016</p>
+                        </div>
+                        <div class="gray-footer__section gray-footer__section_xs_hidden">
+                            <a href="#" class="gray-footer-link">Условия использования</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- Footer block end -->
+
+        <!-- Popups block -->
+        <div class="js-popup popup-wrapper" data-popup="cities">
+            <div class="popup popup_city">
+                <div class="js-close-popup popup__close">
+                    <i class="icon-close-bold mobile-visible tab-hidden desktop-hidden"></i>
+                    <i class="icon icon_close mobile-hidden"></i>
+                </div>
+                <div class="popup__title">
+                    <div class="main-title">
+                        <div class="main-title__text">выберите город</div>
+                    </div>
+                </div>
+                <div class="popup__search">
+                    <form class="st-search-form" action="#">
+                        <input class="js-cities-autocomplete st-input st-input_search-city" type="text">
+                        <button class="st-search-form__submit"></button>
+                    </form>
+                </div>
+                <div class="list-cities">
+                    <div class="list-cities__big-cities list-cities-section">
+                        <div class="list-cities-section__title">крупные города</div>
+                        <div class="list-cities-section__content">
+                            <ul class="st-popup-list st-popup-list_cities">
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Москва</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Санкт-Петербург</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Владивосток</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Волгоград</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Воронеж</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Екатеринбург</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Казань</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Краснодар</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Красноярск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Нижний Новгород</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Новосибирск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Омск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Пермь</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Ростов-на-Дону</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Самара</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Хабаровск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Челябинск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Уфа</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list-cities__other-cities list-cities-section">
+                        <div class="list-cities-section__title">другие города</div>
+                        <div class="list-cities-section__content">
+                            <ul class="st-popup-list st-popup-list_cities">
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Абакан</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Белгород</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Благовещенск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Вологда</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Дзержинск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Ессентуки</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Иркутск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Кемерово</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Киров</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Курган</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Курск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Липецк</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Нефтекамск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Новороссийск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Магнитогорск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Октябрьский</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Оренбург</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Пенза</a></li>
+                            </ul>
+                            <ul class="st-popup-list st-popup-list_cities">
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Абакан</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Белгород</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Благовещенск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Вологда</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Дзержинск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Ессентуки</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Иркутск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Кемерово</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Киров</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Курган</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Курск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Липецк</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Нефтекамск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Новороссийск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Магнитогорск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Октябрьский</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Оренбург</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Пенза</a></li>
+                            </ul>
+                            <ul class="st-popup-list st-popup-list_cities">
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Абакан</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Белгород</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Благовещенск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Вологда</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Дзержинск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Ессентуки</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Иркутск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Кемерово</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Киров</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Курган</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Курск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Липецк</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Нефтекамск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Новороссийск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Магнитогорск</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Октябрьский</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Оренбург</a></li>
+                                <li class="st-popup-list__item"><a class="st-popup-list__link" href="#">Пенза</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="js-popup popup-wrapper" data-popup="auth">
+            <div class="popup popup_auth">
+                <div class="js-close-popup popup__close mobile-hidden">
+                    <i class="icon icon_close"></i>
+                </div>
+                <div class="popup__title">
+                    <div class="main-title">
+                        <a class="js-close-popup main-title__link" href="#"></a>
+                        <div class="main-title__text">авторизация</div>
+                    </div>
+                </div>
+                <div class="popup__content">
+                    <div class="js-auth-step-1 popup__content-left">
+                        <form class="popup-form">
+                            <div class="popup-form__top-info">Мы отправим одноразовый код доступа по SMS на ваш номер:</div>
+                            <input class="js-inputmask popup-form__input st-input" type="text">
+                            <div class="popup-form__button">
+                                <button data-call=".js-auth-step-2" data-close=".js-auth-step-1" class="js-auth-step-1-trigger btn btn_orange btn_mobile-full">ПОЛУЧИТЬ КОД</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="js-auth-step-2 popup__content-left hidden">
+                        <form class="popup-form">
+                            <div class="popup-form__top-info">Введите код из SMS:</div>
+                            <input class="js-inputmask popup-form__input st-input" type="text">
+                            <p class="popup-form__input-info"><a href="#" class="popup-form__send-more">Отправьте мне новый код</a></p>
+                            <div class="popup-form__button">
+                                <button class="btn btn_orange btn_mobile-full">войти</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="popup__content-right">
+                        <ul class="adv-popup">
+                            <li class="adv-popup-item">
+                                <div class="adv-popup-item__header">
+                                    <i class="icon icon_secure icon_gray"></i>
+                                </div>
+                                <div class="adv-popup-item__content">
+                                    <p class="adv-popup-item__title">Это безопасно.</p>
+                                    <div class="adv-popup-item__descr">Мы не передаем ваши данные третьим лицам <br> и не рассылаем рекламу</div>
+                                </div>
+                            </li>
+                            <li class="adv-popup-item">
+                                <div class="adv-popup-item__header">
+                                    <i class="icon icon_list icon_gray"></i>
+                                </div>
+                                <div class="adv-popup-item__content">
+                                    <p class="adv-popup-item__title">Это удобно.</p>
+                                    <div class="adv-popup-item__descr">Сохраняйте расчеты <br> и отслеживайте заказы онлайн</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="js-popup popup-wrapper" data-popup="order-call">
+            <div class="popup popup-auth">
+                <div class="js-close-popup popup__close mobile-hidden">
+                    <span class="icon icon_close icon_black"></span>
+                </div>
+                <div class="popup__title">
+                    <div class="main-title">
+                        <a class="main-title__link" href="#"></a>
+                        <div class="main-title__text">Заказать звонок</div>
+                    </div>
+                </div>
+                <div class="popup__content">
+                    <div class="popup__content-left">
+                        <form class="popup-form">
+                            <div class="popup-form__top-info">Оставьте ваш номер и оператор перезвонит вам:</div>
+                            <div class="popup-form__input">
+                                <input class="st-input st-input_mb_12" type="text">
+                            </div>
+                            <div class="popup-form__button">
+                                <button class="js-call-notification btn btn_orange" data-call-notification="callback">заказать звонок</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="popup__content-right">
+                        <ul class="adv-popup">
+                            <li class="adv-popup-item">
+                                <div class="adv-popup-item__header">
+                                    <div class="adv-popup-item__icon">
+                                        <span class="icon icon_secure icon_gray"></span>
+                                    </div>
+                                </div>
+                                <div class="adv-popup-item__content">
+                                    <p class="adv-popup-item__title">Это безопасно.</p>
+                                    <div class="adv-popup-item__descr">Мы не передаем ваши данные третьим лицам и не рассылаем рекламу</div>
+                                </div>
+                            </li>
+                            <li class="adv-popup-item">
+                                <div class="adv-popup-item__header">
+                                    <div class="adv-popup-item__icon">
+                                        <span class="icon icon_time icon_gray"></span>
+                                    </div>
+                                </div>
+                                <div class="adv-popup-item__content">
+                                    <p class="adv-popup-item__title">Это быстро.</p>
+                                    <div class="adv-popup-item__descr">Квалифицированный специалист ответит на ваши вопросы через несколько секунд</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="js-popup popup-wrapper" data-popup="mobile-menu">
+            <div class="popup-menu">
+                <div class="js-close-popup popup-menu__close">
+                    <span class="icon-close-bold"></span>
+                </div>
+
+                <div class='st-popup-list st-popup-list_menu'>
+                    <div class="st-popup-list__item st-popup-list__item_bb">
+                        <div class="popup-menu__select-city">
+                            <p class="popup-menu__city-name">
+                                <a class="js-open-popup dotted-link" data-open-popup="cities" href="#">Гедеоновка</a>
+                            </p>
+                            <p class="popup-menu__city-info">Представительство: Смоленск</p>
+                        </div>
+                    </div>
+                    <div class="st-popup-list__item st-popup-list__item_bb">
+                        <a class="js-open-popup st-popup-list__link" data-open-popup="auth" href="#">Войти на сайт</a>
+                    </div>
+                    <div class="st-popup-list__item">
+                        <a class="st-popup-list__link" href="#">Каталог</a>
+                    </div>
+                    <div class="st-popup-list__item">
+                        <a class="st-popup-list__link" href="#">Заказы</a>
+                    </div>
+                    <div class="st-popup-list__item">
+                        <a class="st-popup-list__link" href="#">Гарантии</a>
+                    </div>
+                    <div class="st-popup-list__item">
+                        <a class="st-popup-list__link" href="#">Контакты</a>
+                    </div>
+                    <div class="st-popup-list__item">
+                        <a class="st-popup-list__link" href="#">О компании</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="js-popup popup-wrapper popup-wrapper_search desktop-hidden" data-popup="mobile-search">
+            <div class="mobile-search" data-popup="mobile-search">
+                <form class="mobile-search__header mobile-search-form">
+                    <input class="mobile-search-form__input" placeholder="Найти..." type="text">
+                    <div class="js-close-popup mobile-search-form__close" data-closing-popup="mobile-search">
+                        <i class="icon icon_close"></i>
+                    </div>
+                    <button class="mobile-search-form__submit">
+                <span class="icon-arrow"></span>
+            </button>
+                </form>
+                <div class="mobile-search__content">
+                    <div class="mobile-search__descr">Оформить заказ в DoorHan просто – всего в три шага! Начните с выбора продукта в нашем каталоге.</div>
+                    <p>
+                        <a class="btn btn_orange btn_mobile-full" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="popup-notification" data-notification="callback">
+            Заявка успешно отправлена. Оператор скоро перезвонит Вам.
+        </div>
+        <!-- Popups block end -->
+    </div>
+    <!-- Scripts -->
+    <!--build:js js/vendor.js-->
+    <!--bower:js-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-slider/bootstrap-slider.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="js/jquery.autocomplete.min.js"></script>
+    <script src="bower_components/fancybox/source/jquery.fancybox.js"></script>
+
+    <!--endbower-->
+    <!--endbuild-->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"></script>
+    <!--build:js js/common.js-->
+    <script src="js/input.mask.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/YaMap.js"></script>
+    <!--endbuild-->
+
+
+</body>
+
+</html>

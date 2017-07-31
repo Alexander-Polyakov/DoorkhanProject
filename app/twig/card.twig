@@ -1,0 +1,526 @@
+{% extends "layouts/app.twig" %}
+
+{% set secondHeader = 'true' %}
+
+{% block pageTitle %}Карточка товара{% endblock %}
+
+
+{% block content %}
+    {% include "widgets/site-header.twig" %}
+
+<main class="main">
+    <div class="container">
+
+        <div class="main__breadcrumbs">
+            {% include "widgets/breadcrumb.twig" %}
+        </div>
+
+
+        <div class="main__title">
+            <div class="main-title">
+                <a class="main-title__link" href="#"></a>
+                <h1 class="main-title__text">ПАНЕЛЬ ФИЛЕНКА</h1>
+            </div>
+        </div>
+
+
+        <div class="main__content">
+            <div class="card-product">
+                <div class="card-product__left-section">
+                    <div class="card-product__preview">
+                        <a href="images/products/product2.jpg" data-fancybox-group="gallery" data-colorbox><img class="card-product__image" src="images/products/product2.jpg" alt=""></a>
+                        <a href="images/products/product1.jpg" data-fancybox-group="gallery" data-colorbox></a>
+                    </div>
+
+                    <div class="card-product__mobile-price tab-visible desktop-hidden">
+                        <div class="card-price">
+                            <p class="card-product__subtitle-section">цена</p>
+
+                            <div class="card-price__checkboxes">
+                                <div class="switchable-cont switchable-cont_checkbox">
+                                    <input class="switchable-cont__input switchable-cont__input_checkbox" id="toggle-checkbox2" type="checkbox">
+                                    <label class="switchable-cont__toggle" for="toggle-checkbox2">
+                                        <span class="switchable-cont__button switchable-cont__button_checkbox switchable-cont__button_middle"></span>
+                                        <span class="switchable-cont__toggle-content">Доставка</span>
+                                    </label>
+                                    <div class="switchable-cont__content switchable-cont__content_delivery">
+                                        <div class="delivery-descr">
+                                            <div class="delivery-descr__title">Смоленск → <span class="js-open-popup dotted-link" data-open-popup="cities">Гедеоновка</span></div>
+                                            <div class="delivery-descr__content">
+                                                <div class="delivery-descr__price">14 &#8381;/км, в стоимость не включена</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-price__checkboxes-abs switchable-cont switchable-cont_checkbox">
+                                    <input class="switchable-cont__input switchable-cont__input_checkbox" id="toggle-checkbox3" type="checkbox">
+                                    <label class="switchable-cont__toggle" for="toggle-checkbox3">
+                                        <span class="switchable-cont__button switchable-cont__button_checkbox switchable-cont__button_middle"></span>
+                                        <span class="switchable-cont__toggle-content">Монтаж</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="card-price__reset">
+                                <div class="card-price__reset-header">
+                                    <div class="card-price__price">37 230 &#8381;</div>
+                                    <p class="card-price__reset-info">Обновлена 2.10.2016</p>
+                                </div>
+                                <p>
+                                    <span class="price-reset-btn">
+                                        <span class="price-reset-btn__text">обновить цену</span>
+                                    </span>
+                                </p>
+
+                            </div>
+
+                            <div>
+                                <a class="btn btn_orange btn_mobile-full" href="#">рассчитать</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="js-tabs tabs tabs_equipment">
+                        <ul class="tabs__nav">
+                            <li class="js-tab-toggle tabs__nav-item active" data-tab-toggle="1">
+                                <a class="tabs__nav-link" href="#">Параметры</a>
+                            </li>
+                            <li class="js-tab-toggle tabs__nav-item" data-tab-toggle="2">
+                                <a class="tabs__nav-link" href="#">Комплектация</a>
+                            </li>
+                        </ul>
+                        <div class="js-tab card-product__section card-product__section_bb active" data-tab="1">
+                            <div class="product-options">
+                                <div class="product-options-item">
+                                    <div class="card-product__subtitle-section ">ГАБАРИТЫ ПОЛОТНА</div>
+                                    <div class="product-options-item__section">
+                                        <div class="product-options-sliders">
+                                            <div class="product-options-sliders__item slider-section">
+                                                <div class="slider-section__header">
+                                                    <span class="slider-section__title">Ширина</span>
+                                                    <div class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></div>
+                                                </div>
+                                                <div class="js-slider st-slider">
+                                                    <div class="st-slider__main">
+                                                        <div class="st-slider__value">
+                                                            <span class="st-slider__value-min">2 000</span>
+                                                            <span class="st-slider__value-max">5 000</span>
+                                                        </div>
+                                                        <input class="js-slider-main" type="text"  data-slider-tooltip="hide" data-slider-value="2500" data-slider-min="2000" data-slider-max="5000" data-slider-step="100"/>
+                                                    </div>
+                                                    <div class="st-slider__result">
+                                                        <input class="js-slider-result st-slider__result-value" type="text">
+                                                        <span class="st-slider__result-text">мм</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-options-sliders__item">
+                                                <div class="slider-section__header">
+                                                    <span class="slider-section__title">Ширина</span>
+                                                    <div class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></div>
+                                                </div>
+                                                <div class="js-slider st-slider">
+                                                    <div class="st-slider__main">
+                                                        <div class="st-slider__value">
+                                                            <span class="st-slider__value-min">2 000</span>
+                                                            <span class="st-slider__value-max">5 000</span>
+                                                        </div>
+                                                        <input class="js-slider-main" type="text"  data-slider-tooltip="hide" data-slider-value="3500" data-slider-min="2000" data-slider-max="5000" data-slider-step="100"/>
+                                                    </div>
+                                                    <div class="st-slider__result">
+                                                        <input class="js-slider-result st-slider__result-value" type="text">
+                                                        <span class="st-slider__result-text">мм</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options-item">
+                                    <div class="card-product__subtitle-section ">ЦВЕТ</div>
+                                    <div class="select-color">
+                                        <div class="js-color-palette color-palette">
+                                            <div class="js-color-palette__selected color-palette__title">RAL 9006 Серебристый</div>
+                                            <div class="color-palette__grid">
+                                                <div class="color-palette__item" style="background-color: #fff">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color1">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                                <div class="color-palette__item" style="background-color: #4a3729">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color2">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                                <div class="color-palette__item" style="background-color: #164788">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color3">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                                <div class="color-palette__item" style="background-color: #104639">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color4">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                                <div class="color-palette__item" style="background-color: #5a1d2c">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color5">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                                <div class="color-palette__item" style="background-color: #c6c7c9">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color6">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                                <div class="color-palette__item" style="background-color: #decf9e">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color7">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                                <div class="color-palette__item" style="background-color: #9c9ea1">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color8">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                                <div class="color-palette__item" style="background-color: #a12624">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color9">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                                <div class="color-palette__item" style="background-color: #38414a">
+                                                    <input class="js-color-palette__radio color-palette__radio" name="color-select" type="radio" title="color10">
+                                                    <i class="color-palette__check"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="select-color__info">Доступны другие цвета по палитре RAL</div>
+
+
+                                        <div class="switchable-cont switchable-cont_checkbox">
+                                            <input class="switchable-cont__input switchable-cont__input_checkbox" id="toggle-checkbox5" type="checkbox">
+                                            <label class="switchable-cont__toggle" for="toggle-checkbox5">
+                                                <span class="switchable-cont__button switchable-cont__button_checkbox switchable-cont__button_middle"></span>
+                                                <span class="switchable-cont__toggle-content">Ширина</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-options-item">
+                                    <div class="card-product__subtitle-section ">АВТОМАТИКА</div>
+                                    <div class="automatic-transmission">
+                                        <div class="switchable-cont switchable-cont_checkbox">
+                                            <input class="switchable-cont__input switchable-cont__input_checkbox" id="toggle-checkbox" type="checkbox">
+                                            <label class="switchable-cont__toggle" for="toggle-checkbox">
+                                                <span class="switchable-cont__button switchable-cont__button_checkbox"></span>
+                                                <span class="switchable-cont__toggle-content">Автоматический привод</span>
+                                            </label>
+
+                                            <div class="switchable-cont__content switchable-cont__content_selection">
+                                                <ul class="select-list">
+                                                    <li class="select-list__item">
+                                                        <div class="switchable-cont switchable-cont_radio">
+                                                            <input class="switchable-cont__input switchable-cont__input_radio" name="product-radio" id="toggle-radio1" type="radio">
+                                                            <label class="switchable-cont__toggle" for="toggle-radio1">
+                                                                <span class="switchable-cont__button switchable-cont__button_middle switchable-cont__button_radio"></span>
+                                                                <span class="switchable-cont__toggle-content switchable-cont__toggle-content_tooltip">SL-300/800 <span class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="select-list__item">
+                                                        <div class="switchable-cont switchable-cont_radio">
+                                                            <input class="switchable-cont__input switchable-cont__input_radio" name="product-radio" id="toggle-radio2" type="radio">
+                                                            <label class="switchable-cont__toggle" for="toggle-radio2">
+                                                                <span class="switchable-cont__button switchable-cont__button_middle switchable-cont__button_radio"></span>
+                                                                <span class="switchable-cont__toggle-content switchable-cont__toggle-content_tooltip">SL-1300/2100 <span class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="select-list__item">
+                                                        <div class="switchable-cont switchable-cont_radio">
+                                                            <input class="switchable-cont__input switchable-cont__input_radio" name="product-radio" id="toggle-radio3" type="radio">
+                                                            <label class="switchable-cont__toggle" for="toggle-radio3">
+                                                                <span class="switchable-cont__button switchable-cont__button_middle switchable-cont__button_radio"></span>
+                                                                <span class="switchable-cont__toggle-content switchable-cont__toggle-content_tooltip">SL-1300/2100 Pro <span class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="select-list__item">
+                                                        <p class="select-list__item-title">Пультов управления</p>
+                                                        <div>
+                                                            <select class="st-select">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="2">3</option>
+                                                                <option value="2">4</option>
+                                                                <option value="2">5</option>
+                                                            </select>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-tab card-product__section card-product__section_bb " data-tab="2">
+                                <div class="card-product__section-header">
+                                    <div class="card-product__section-title">Комплектация</div>
+                                </div>
+                                <div class="card-product__section-content">
+                                    <div class="card-product__equipment">
+                                        <div class="equipment-list">
+                                            <div class="equipment-list__item">
+                                                <div class="equipment-item">
+                                                    <div class="equipment-item__icon">
+                                                        <i class="icon icon_power-rack"></i>
+                                                    </div>
+                                                    <div class="equipment-item__text">Силовая рама</div>
+                                                    <div class="equipment-item__tooltip">
+                                                        <div class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="equipment-list__item">
+                                                <div class="equipment-item">
+                                                    <div class="equipment-item__icon">
+                                                        <i class="icon icon_bolt-lock"></i>
+                                                    </div>
+                                                    <div class="equipment-item__text">Замок-задвижка</div>
+                                                    <div class="equipment-item__tooltip">
+                                                        <div class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="equipment-list__item">
+                                                <div class="equipment-item">
+                                                    <div class="equipment-item__icon">
+                                                        <i class="icon icon_barrier"></i>
+                                                    </div>
+                                                    <div class="equipment-item__text">Лежачий полицейский</div>
+                                                    <div class="equipment-item__tooltip">
+                                                        <div class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="equipment-list__item">
+                                                <div class="equipment-item">
+                                                    <div class="equipment-item__icon">
+                                                        <i class="icon icon_remote-control"></i>
+                                                    </div>
+                                                    <div class="equipment-item__text">Пульт управления</div>
+                                                    <div class="equipment-item__tooltip">
+                                                        <div class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="equipment-list__item">
+                                                <div class="equipment-item">
+                                                    <div class="equipment-item__icon">
+                                                        <i  class="icon icon_handle"></i>
+                                                    </div>
+                                                    <div class="equipment-item__text">Удобная ручка</div>
+                                                    <div class="equipment-item__tooltip">
+                                                        <div class="js-call-popover tooltip" data-content="Надежная базовая фурнитура. Можно заменить на замок другого типа."></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+
+
+                    <div class="card-product__section card-product__section_characteristics">
+                        <div class="st-accordion" role="tablist">
+                            <div class="st-accordion__header" role="tab" data-toggle="collapse" data-target="#advantages-list" aria-expanded="true" aria-controls="advantages-list">
+                                <div class="card-product__section-title">Характеристики</div>
+                            </div>
+                            <div class="collapse in" id="advantages-list" aria-expanded="true" role="tabpanel">
+                                <div class="st-accordion__content">
+                                    <div class="characteristics-list">
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Материал полотна</div>
+                                            <div class="characteristics-list__cell">Сендвич-панели</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Материал окантовки</div>
+                                            <div class="characteristics-list__cell">Экструдированный алюминиевый профиль</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Покраска окантовки</div>
+                                            <div class="characteristics-list__cell">Порошковая краска</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Поддерживающие крепежные элементы</div>
+                                            <div class="characteristics-list__cell">-</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Прочность крепления ручек</div>
+                                            <div class="characteristics-list__cell">не менее 1000 Н</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Сопротивление ветровой нагрузке</div>
+                                            <div class="characteristics-list__cell">Св. 700 Па</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Изоляция воздушного шума</div>
+                                            <div class="characteristics-list__cell">35 дБ</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Безотказность</div>
+                                            <div class="characteristics-list__cell">мин. 20 000 циклов открытия/закрытия</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Усилие ручного открытия и закрытия ворот</div>
+                                            <div class="characteristics-list__cell">не более 150 Н</div>
+                                        </div>
+                                        <div class="characteristics-list__row">
+                                            <div class="characteristics-list__cell">Сопротивление удару твердым телом</div>
+                                            <div class="characteristics-list__cell">Е - 10 <br> Дж h - 1 м <br> m шара - 1 кг</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="banner banner_consultation mobile-hidden">
+                        <div class="banner__bg" style="background-image: url('images/banner-consultation.jpg')"></div>
+                        <div class="banner__content">
+                            <div class="banner__title">Нужна консультация?</div>
+                            <div class="banner__descr">Перезвоним вам в течение 20 секунд</div>
+                            <div class="banner__button">
+                                <span class="js-open-popup btn btn_orange" data-open-popup="order-call">ЗАКАЗАТЬ ЗВОНОК</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mobile-visible desktop-hidden">
+                        <a class="btn btn_mobile-full btn_orange" href="#">РАССЧИТАТЬ</a>
+                    </div>
+
+                    <div class="card-product__section desktop-hidden mobile-visible">
+                        <div class="js-open-popup card-phone-banner" data-open-popup="auth">
+                            <span class="card-phone-banner__text">+7 495 933 24 00</span>
+                        </div>
+                    </div>
+
+
+                    <div class="card-product__section card-product__section_last">
+                        <div class="card-product__section-header">
+                            <div class="card-product__section-title">С этими воротами покупают:</div>
+                        </div>
+                        <div class="products-grid products-grid_number_3">
+                            <div class="products-grid__item">
+                                <a href="#" class="product product_small">
+                                    <div class="product__size"></div>
+                                    <div class="product__content">
+                                        <div class="product__header">
+                                            <div class="product__title">ВОРОТА «REVOLUTION» ВОРОТА «REVOLUTION» ВОРОТА «REVOLUTION»</div>
+                                        </div>
+                                        <div class="product__preview">
+                                            <img class="product__image" src="images/products/product1.jpg" alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <p class="product__price">от 42 000 &#8381;</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="products-grid__item">
+                                <a href="#" class="product product_small">
+                                    <div class="product__size"></div>
+                                    <div class="product__content">
+                                        <div class="product__header">
+                                            <div class="product__title">ВОРОТА «REVOLUTION» ВОРОТА «REVOLUTION» ВОРОТА «REVOLUTION»</div>
+                                        </div>
+                                        <div class="product__preview">
+                                            <img class="product__image" src="images/products/product1.jpg" alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <p class="product__price">от 42 000 &#8381;</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="products-grid__item mobile-hidden">
+                                <a href="#" class="product product_small">
+                                    <div class="product__size"></div>
+                                    <div class="product__content">
+                                        <div class="product__header">
+                                            <div class="product__title">ВОРОТА «REVOLUTION» ВОРОТА «REVOLUTION» ВОРОТА «REVOLUTION»</div>
+                                        </div>
+                                        <div class="product__preview">
+                                            <img class="product__image" src="images/products/product1.jpg" alt="">
+                                        </div>
+                                        <div class="product__footer">
+                                            <p class="product__price">от 42 000 &#8381;</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product__right-section">
+                    <div class="card-price">
+                        <p class="card-product__subtitle-section">цена</p>
+                        <div class="card-price__price">37 230 &#8381;</div>
+                        <div class="card-price__reset">
+                            <p class="card-price__reset-info">Обновлена 2.10.2016</p>
+                            <p>
+                                <span class="price-reset-btn">
+                                    <span class="price-reset-btn__text">обновить цену</span>
+                                </span>
+                            </p>
+
+                        </div>
+                        <div class="card-price__delivery">
+                            <div class="switchable-cont switchable-cont_checkbox">
+                                <input class="switchable-cont__input switchable-cont__input_checkbox" id="toggle-checkbox10" type="checkbox">
+                                <label class="switchable-cont__toggle" for="toggle-checkbox10">
+                                    <span class="switchable-cont__button switchable-cont__button_checkbox switchable-cont__button_middle"></span>
+                                    <span class="switchable-cont__toggle-content">Доставка</span>
+                                </label>
+                                <div class="switchable-cont__content switchable-cont__content_delivery">
+                                    <div class="delivery-descr">
+                                        <div class="delivery-descr__title">Смоленск → <span class="js-open-popup dotted-link" data-open-popup="cities">Гедеоновка</span></div>
+                                        <div class="delivery-descr__content">
+                                            <div class="delivery-descr__text">в стоимость не включена,
+                                                <br> может быть выполнена <br> дилером по цене</div>
+                                            <div class="delivery-descr__price">4 &#8381;/км</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-price__mounting">
+                            <div class="mounting-descr">
+                                <p class='mounting-descr__title'>Монтаж</p>
+                                <p class="mounting-descr__text">включен в стоимость</p>
+                            </div>
+                        </div>
+
+                        <div class="card-price__mounting">
+                            <div class="switchable-cont switchable-cont_checkbox">
+                                <input class="switchable-cont__input switchable-cont__input_checkbox" id="toggle-checkbox11" type="checkbox">
+                                <label class="switchable-cont__toggle" for="toggle-checkbox11">
+                                    <span class="switchable-cont__button switchable-cont__button_checkbox switchable-cont__button_middle"></span>
+                                    <span class="switchable-cont__toggle-content">Монтаж</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a class="btn btn_orange" href="#">сохранить расчет</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+{% endblock %}

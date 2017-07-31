@@ -1,0 +1,37 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Нет заказов{% endblock %}
+
+{% block content %}
+    {% include "widgets/site-header.twig" %}
+
+    <main class="main">
+        <div class="container">
+
+            <div class="main__breadcrumbs">
+                {% include "widgets/breadcrumb.twig" %}
+            </div>
+
+
+            <div class="main__title">
+                <div class="main-title">
+                    <a class="main-title__link" href="#"></a>
+                    <h1 class="main-title__text">у вас пока нет заказов</h1>
+                </div>
+            </div>
+
+            <div class="main__content">
+                <div class="no-orders">
+                    <div class="no-orders__text">
+                        Оформить заказ в DoorHan просто – всего в три шага!
+                        Начните с выбора продукта в нашем <a class="tdu-link" href="#">каталоге</a>
+                    </div>
+                    <div class="no-orders__btn-wrap">
+                        <a class="btn btn_orange" href="#">Перейти в каталог</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

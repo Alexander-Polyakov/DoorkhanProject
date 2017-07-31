@@ -1,0 +1,168 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}СОХРАНЕННЫЕ РАСЧЕТЫ {% endblock %}
+
+
+{% block content %}
+    {% include "widgets/site-header.twig" %}
+
+    <main class="main">
+        <div class="container ">
+
+
+            <div class="main__breadcrumbs">
+                {% include "widgets/breadcrumb.twig" %}
+            </div>
+
+            <div class="main__title">
+                <div class="main-title">
+                    <a class="main-title__link" href="#"></a>
+                    <h1 class="main-title__text">СОХРАНЕННЫЕ РАСЧЕТЫ</h1>
+                </div>
+            </div>
+
+            <div class="main__content">
+               <div class="cart">
+                   <div class="js-checkbox-wrapper cart-table">
+                       <div class="cart-table__th">
+                           <div class="cart-table__td">
+                               <div class="switchable-cont switchable-cont_checkbox">
+                                   <input class="js-checkbox-all switchable-cont__input switchable-cont__input_checkbox" name="product-checkbox" id="toggle-checkbox1" type="checkbox">
+                                   <label class="switchable-cont__toggle" for="toggle-checkbox1">
+                                       <span class="switchable-cont__button switchable-cont__button_checkbox"></span>
+                                       <span class="switchable-cont__toggle-content switchable-cont__toggle-content_orange-active">Заказать все</span>
+                                   </label>
+                               </div>
+                           </div>
+                           <div class="cart-table__td">Товары</div>
+                           <div class="cart-table__td">Штук</div>
+                           <div class="cart-table__td">Цена</div>
+                       </div>
+                       <div class="cart-table__tr">
+                           <div class="cart-table__td">
+                               <div class="cart-table__item-order">
+                                   <div class="switchable-cont switchable-cont_checkbox">
+                                       <input class="js-checkbox-single switchable-cont__input switchable-cont__input_checkbox" name="product-checkbox" id="toggle-checkbox2" type="checkbox">
+                                       <label class="switchable-cont__toggle" for="toggle-checkbox2">
+                                           <span class="switchable-cont__button switchable-cont__button_checkbox"></span>
+                                           <span class="switchable-cont__toggle-content switchable-cont__toggle-content_orange-active">Заказать</span>
+                                       </label>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="cart-table__td">
+
+                               <div class="cart-table__item-content">
+                                   <div class="table-product">
+                                       <div class="table-product__preview">
+                                           <img class="table-product__preview-image" src="images/products/product1.jpg" alt="">
+                                       </div>
+                                       <div class="table-product__content">
+                                           <div class="table-product__name">СДВИЖНЫЕ ВОРОТА REVOLUTION
+                                               4000х2000 ММ</div>
+                                           <p>
+                                               <a class="table-product__options-link" href="#">Параметры заказа</a>
+                                           </p>
+                                       </div>
+                                   </div>
+                               </div>
+
+                           </div>
+                           <div class="cart-table__td">
+                               <div class="cart-table__item-value">
+                                   <input class="st-input st-input_tac" value="1" type="text">
+                               </div>
+                           </div>
+                           <div class="cart-table__td">
+                                <div class="cart-table__item-price">
+                                    <p class="cart-table__price-value">37 230 &#8381;</p>
+                                    <p class="cart-table__price-info">Обновлена 2.10.2016</p>
+                                    <p>
+                                        <span class="price-reset-btn">
+                                            <span class="price-reset-btn__text">обновить цену</span>
+                                        </span>
+                                    </p>
+                                </div>
+                               <div class="cart-table__item-delete"><span class="icon icon_delete"></span></div>
+                           </div>
+
+                       </div>
+                       <div class="cart-table__tr">
+                           <div class="cart-table__td">
+                               <div class="cart-table__item-order">
+                                   <div class="switchable-cont switchable-cont_checkbox">
+                                       <input class="js-checkbox-single switchable-cont__input switchable-cont__input_checkbox" name="product-checkbox" id="toggle-checkbox3" type="checkbox">
+                                       <label class="switchable-cont__toggle" for="toggle-checkbox3">
+                                           <span class="switchable-cont__button switchable-cont__button_checkbox"></span>
+                                           <span class="switchable-cont__toggle-content switchable-cont__toggle-content_orange-active">Заказать</span>
+                                       </label>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="cart-table__td">
+                               <div class="cart-table__item-content">
+                                   <div class="table-product">
+                                       <div class="table-product__preview">
+                                           <img class="table-product__preview-image" src="images/products/product1.jpg" alt="">
+                                       </div>
+                                       <div class="table-product__content">
+                                           <div class="table-product__name">СДВИЖНЫЕ ВОРОТА REVOLUTION
+                                               4000х2000 ММ</div>
+                                           <p>
+                                               <a class="table-product__options-link" href="#">Параметры заказа</a>
+                                           </p>
+                                       </div>
+                                   </div>
+
+                               </div>
+                           </div>
+                           <div class="cart-table__td">
+                               <div class="cart-table__item-value">
+                                   <input class="st-input st-input_tac" value="1" type="text">
+                               </div>
+                           </div>
+                           <div class="cart-table__td">
+                               <div class="cart-table__item-price">
+                                   <p class="cart-table__price-value">37 230 &#8381;</p>
+                                   <p class="cart-table__price-info">Обновлена 2.10.2016</p>
+                                   <p>
+                                        <span class="price-reset-btn">
+                                            <span class="price-reset-btn__text">обновить цену</span>
+                                        </span>
+                                   </p>
+                               </div>
+                               <div class="cart-table__item-delete"><span class="icon icon_delete"></span></div>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="result-table-total">
+                       <div class="result-table-total__tr result-table-total__tr_bg_beige">
+                           <div class="result-table-total__td">Итоговая стоимость с монтажом</div>
+                           <div class="result-table-total__td result-table-total__td_price">138 978 &#8381;</div>
+                       </div>
+                       <div class="result-table-total__tr result-table-total__tr_delivery">
+                           <div class="result-table-total__td">
+                               <div class="delivery-descr delivery-descr_table">
+                                   <div class="delivery-descr__title">Смоленск → <span class="js-open-popup dotted-link" data-open-popup="cities">Гедеоновка</span></div>
+                                   <div class="delivery-descr__content">
+                                       <div class="delivery-descr__text">в стоимость не включена, может быть выполнена дилером по цене</div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="result-table-total__td result-table-total__td_delivery-price">14 &#8381;/км</div>
+                       </div>
+                       <div class="result-table-total__tr">
+                           <div class="result-table-total__td"></div>
+                           <div class="result-table-total__td">
+                               <a class="btn btn_gray btn_mobile-full" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+            </div>
+
+        </div>
+    </main>
+{% endblock %}

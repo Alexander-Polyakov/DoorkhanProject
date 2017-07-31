@@ -1,0 +1,118 @@
+=box_sizing($params)
+    -webkit-box-sizing: $params
+    -moz-box-sizing: $params
+    box-sizing: $params
+
+=box_shadow($params)
+    -webkit-box-shadow: $params
+    -moz-box-shadow: $params
+    box-shadow: $params
+
+=transition($params)
+    -webkit-transition: $params
+    -moz-transition: $params
+    -o-transition: $params
+    transition: $params
+
+=transform($params)
+    -webkit-transform: $params
+    -moz-transform: $params
+    -ms-transform: $params
+    -o-transform: $params
+    transform: $params
+
+=border_radius($params)
+    -webkit-border-radius: $params
+    -moz-border-radius: $params
+    border-radius: $params
+
+
+=fluid-columns($columns, $spaces, $mb)
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    margin-right: calc(#{$spaces}/2 * (-1))
+    margin-left: calc(#{$spaces}/2 * (-1))
+    position: relative
+    top: - $mb
+    overflow: hidden
+    & > .grid-wrapper
+        box-sizing: border-box
+        padding-top: $mb
+        width: calc(1/#{$columns}*100%)
+        padding-left: calc(#{$spaces}/2)
+        padding-right: calc(#{$spaces}/2)
+
+=rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0)
+    -moz-transform: rotate($deg + deg)
+    -o-transform: rotate($deg + deg)
+    -webkit-transform: rotate($deg + deg)
+    -ms-transform: rotate($deg + deg)
+    transform: rotate($deg + deg)
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand')
+    zoom: 1
+
+=pos($var)
+    @if $var == tm
+        +transform(translateY(-50%))
+        top: 50%
+    @if $var == lm
+        +transform(translateX(-50%))
+        left: 50%
+    @if $var == m
+        +transform(translate3d(-50%, -50%, 0))
+        top: 50%
+        left: 50%
+
+=trans($property:all,$duration:0.5s,$effect:ease,$delay:0s)
+    -webkit-transition: $property $duration $effect $delay
+    -moz-transition: $property $duration $effect $delay
+    -o-transition: $property $duration $effect $delay
+    transition: $property $duration $effect $delay
+
+
+=phc($color)
+    &::-webkit-input-placeholder
+        color: $color !important
+        opacity: 1 !important
+    &::-moz-placeholder
+        color: $color !important
+        opacity: 1 !important
+    &:-moz-placeholder
+        color: $color !important
+        opacity: 1 !important
+    &:-ms-input-placeholder
+        color: $color !important
+        opacity: 1 !important
+
+=arr($width, $height, $bg, $direction)
+    width: 0px
+    height: 0px
+    border-style: solid
+    @if $direction == t
+        border-width: 0 $width / 2 + px $height + px $width / 2 + px
+        border-color: transparent transparent $bg transparent
+    @if $direction == r
+        border-width: $height / 2 + px 0 $height / 2 + px $width + px
+        border-color: transparent transparent transparent $bg
+    @if $direction == b
+        border-width: $height + px $width / 2 + px 0 $width / 2 + px
+        border-color: $bg transparent transparent transparent
+    @if $direction == l
+        border-width: $height / 2 + px $width + px $height / 2 + px 0
+        border-color: transparent $bg transparent transparent
+    @if $direction == tl
+        border-width: $height + px $width + px 0 0
+        border-color: $bg transparent transparent transparent
+    @if $direction == tr
+        border-width: 0 $width + px $height + px 0
+        border-color: transparent $bg transparent transparent
+    @if $direction == br
+        border-width: 0 0 $height + px $width + px
+        border-color: transparent transparent $bg transparent
+    @if $direction == bl
+        border-width: $width + px 0 0 $height + px
+        border-color: transparent transparent transparent $bg
+
+
+@import '_retina_sprites'

@@ -1,0 +1,129 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Задать вопрос{% endblock %}
+
+
+{% block content %}
+    {% include "widgets/site-header.twig" %}
+
+    <main class="main">
+        <div class="container">
+
+
+            <div class="main__breadcrumbs">
+                {% include "widgets/breadcrumb.twig" %}
+            </div>
+
+            <div class="main__title">
+                <div class="main-title">
+                    <a class="main-title__link" href="#"></a>
+                    <h1 class="main-title__text">Задать вопрос</h1>
+                </div>
+            </div>
+
+            <div class="main__content">
+                <div class="st-form st-form_width_540">
+                    <div class="st-form__row">
+                        <div class="st-form-line">
+                            <div class="st-form-line__section st-form-line__section_left mobile-hidden">
+                                <p class="st-form-line__name st-form-line__name_required">Тема</p>
+                            </div>
+                            <div class="st-form-line__section st-form-line__section_right">
+                                <select class="st-select">
+                                    <option value="1">Технические вопросы</option>
+                                    <option value="2">Заказ, оплата, доставка</option>
+                                    <option value="2">Установка</option>
+                                    <option value="2">Сервис</option>
+                                    <option value="2">Другое</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="st-form__row">
+                        <div class="st-form-line">
+                            <div class="st-form-line__section st-form-line__section_left mobile-hidden">
+                                <p class="st-form-line__name st-form-line__name_required">Текст сообщения</p>
+                            </div>
+                            <div class="st-form-line__section st-form-line__section_right">
+                                <textarea class="st-textarea" placeholder="Текст сообщения"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="st-form__row">
+                        <div class="st-form-line">
+                            <div class="st-form-line__section st-form-line__section_left mobile-hidden">
+                                <p class="st-form-line__name st-form-line__name_required">Электронная почта</p>
+                            </div>
+                            <div class="st-form-line__section st-form-line__section_right">
+                                <input class="st-input" placeholder="Электронная почта" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="st-form__row">
+                        <div class="st-form-line">
+                            <div class="st-form-line__section st-form-line__section_left mobile-hidden">
+                                <p class="st-form-line__name st-form-line__name_required">Номер телефона</p>
+                            </div>
+                            <div class="st-form-line__section st-form-line__section_right">
+                                <input class="st-input" placeholder="Номер телефона" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="st-form__row st-form__row_mb_30">
+                        <div class="st-form-line">
+                            <div class="st-form-line__section st-form-line__section_left st-form-line__section_pt_0 mobile-hidden">
+                                <p class="st-form-line__name">Фотографии</p>
+                            </div>
+                            <div class="st-form-line__section st-form-line__section_right">
+                                <div class="js-attach-files attach-files">
+                                    <div class="attach-files__header">
+                                        <p class="attach-files__title">
+                                            <i class="icon icon_attach"></i>
+                                            Прикрепить файлы:
+                                        </p>
+                                        <span class="attach-files__value">
+                                        <span class="js-attach-files__current attach-files__current">0</span><span class="attach-files__total">/<span
+                                                        class="js-attach-files__total">5</span></span>
+                                    </span>
+                                    </div>
+                                    <div class="attach-files__content">
+                                        <div class="js-attach-files__item attach-files__item">
+                                            <input type="file" class="js-attach-file__input attach-files__input">
+                                        </div>
+                                        <div class="js-attach-files__item attach-files__item">
+                                            <input type="file" class="js-attach-file__input attach-files__input">
+                                        </div>
+                                        <div class="js-attach-files__item attach-files__item">
+                                            <input type="file" class="js-attach-file__input attach-files__input">
+                                        </div>
+                                        <div class="js-attach-files__item attach-files__item mobile-hidden">
+                                            <input type="file" class="js-attach-file__input attach-files__input">
+                                        </div>
+                                        <div class="js-attach-files__item attach-files__item mobile-hidden">
+                                            <input type="file" class="js-attach-file__input attach-files__input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="st-form__row">
+                        <div class="st-form-line">
+                            <div class="st-form-line__section st-form-line__section_left  mobile-hidden"></div>
+                            <div class="st-form-line__section st-form-line__section_right">
+                                <a class="btn btn_gray btn_mobile-full btn_mobile_active" href="#">отправить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+{% endblock %}

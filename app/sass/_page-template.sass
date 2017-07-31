@@ -1,0 +1,541 @@
+@import "variables"
+
+.hidden
+    display: none
+
+*
+    &, &:focus, &:active
+        outline: none
+
+    box-sizing: border-box
+
+
+ul
+    list-style-type: disc
+    padding-left: 15px
+
+li
+    margin-bottom: 20px
+    &:last-child
+        margin-bottom: 0
+
+
+input, textarea, a
+    font-family: inherit
+
+.link-hover-orange
+    +trans
+    &:hover
+        color: $orange
+        
+.st-descr_color_gray
+    color: $grey
+
+.main
+    padding: 30px 0 100px 0
+    flex-grow: 1
+
+.main_pb_40
+    padding-bottom: 40px
+
+.main__breadcrumbs
+    margin-bottom: 35px
+
+.main__title
+    margin-bottom: 45px
+
+.dotted-link
+    cursor: pointer
+    border-bottom: 1px dotted #8d8e8f
+    &:hover
+        border-bottom: 1px dotted transparent
+
+.site-wrapper
+    overflow-x: hidden
+    min-width: 320px
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    box-sizing: border-box
+
+.img-responsive
+    width: 100%
+    height: auto
+
+.content-title
+    display: flex
+    margin-bottom: 31px
+    justify-content: flex-start
+    align-items: center
+
+.content-title__header
+    text-transform: uppercase
+    color: $black
+    font-size: 28px
+    font-family: $font-base-bold
+    &_desk-inv
+        display: none
+
+.content-title__text_desk-inv
+    display: none
+
+.content-title__link
+    display: none
+    margin-right: 10px
+
+.gray-footer
+    background-color: $darker-grey
+    padding-bottom: 22px
+    padding-top: 22px
+    color: $light-grey
+    &-inner
+        display: flex
+        justify-content: flex-start
+    &__section
+        margin-right: 41px
+        font-size: 12px
+    &-link
+        text-decoration: underline
+        transition: all 0.3s ease 0s
+        &:hover
+            color: $orange
+
+.white-footer
+    padding-bottom: 27px
+    padding-top: 27px
+    box-sizing: border-box
+
+.site-footer
+    border-top: 1px solid #a9aaab
+
+//________________________________________________
+//BUTTONS
+.btn:not(.dropdown-toggle)
+    border-radius: 20px
+    padding: 10px 20px
+    font-size: 12px
+    font-family: $font-base-bold
+    display: inline-block
+    vertical-align: middle
+    text-transform: uppercase
+    text-align: center
+    cursor: pointer
+    outline: none
+    +trans()
+
+.btn_select-city
+    border: 2px solid #fff
+    border-radius: 50px
+    &:hover
+        background-color: #fff
+        color: #f6931d
+
+.btn_select-city-white
+    background-color: #fff
+    border-radius: 50px
+    color: #f6931d
+
+
+.btn_gray
+    color: $grey
+    font-family: $font-base-bold
+    background-color: transparent
+    border: 1px solid $darker-grey
+    &:hover
+        color: #fff
+        background-color: $orange
+        border-color: $orange
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+    &:active, &:focus, &.active
+        color: #fff
+        background-color: $orange-dark
+        border-color: $orange-dark
+        box-shadow: none
+
+.btn_orange
+    &:disabled
+        @extend .btn_gray
+
+    &:not(disabled)
+        color: #fff
+        background-color: $orange
+        border: 1px solid $orange
+        &:hover
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+        &:active, &:focus
+            border: 1px solid $orange-dark
+            background-color: $orange-dark
+            box-shadow: none
+
+//________________________________________________
+//FORMS
+
+.st-list
+    display: inline-block
+    vertical-align: top
+    padding: 0
+    list-style: none
+
+.st-list__item
+    margin-bottom: 7px
+    &:last-child
+        margin-bottom: 0
+
+.list-cities-section__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.st-list_cities
+    margin-right: 20px
+    font-size: 13px
+
+.main-title
+    position: relative
+
+.main-title__text
+    font-size: 28px
+    font-family: $font-base-bold
+    text-transform: uppercase
+    line-height: 1.2em
+
+.main-title__link
+    position: absolute
+    width: 16px
+    height: 16px
+    margin-right: 15px
+    display: none
+    +pos(tm)
+    left: 0
+    &:before
+        content: ''
+        width: 12px
+        height: 12px
+        position: absolute
+        left: 0
+        top: 50%
+        margin-top: -7px
+        border-left: 2px solid #303232
+        border-top: 2px solid #303232
+        +rotate(-45deg)
+    &:after
+        content: ''
+        position: absolute
+        left: 0
+        width: 100%
+        height: 2px
+        top: 50%
+        margin-top: -1px
+        background-color: #303232
+
+
+.st-form_width_540
+    max-width: 540px
+
+.st-form__row
+    margin-bottom: 20px
+    &:last-child
+        margin-bottom: 0
+
+.st-form__row_mb_30
+    margin-bottom: 30px
+
+.st-form-line__section-el
+    margin-bottom: 15px
+    &:last-child
+        margin-bottom: 0
+
+.st-form__section-title
+    margin-bottom: 10px
+    font-size: 12px
+    text-transform: uppercase
+    color: #8d8e8f
+
+.st-form-line
+    display: flex
+
+.st-form-line__section_left
+    width: 30%
+    text-align: right
+    padding-right: 20px
+    padding-top: 9px
+
+.st-form-line__name
+    color: #8d8e8f
+
+.st-form-line__name_required
+    position: relative
+    &:after
+        content: '*'
+        position: absolute
+        right: -6px
+        top: -2px
+        color: #f6931d
+
+.st-form-line__section_pt_0
+    padding-top: 0
+
+.st-form-line__section_right
+    width: 70%
+
+.st-form__button
+    margin-right: 15px
+    display: inline-block
+    vertical-align: middle
+
+.st-input
+    width: 100%
+    height: 36px
+    padding: 0 15px
+    color: #5d5d5d
+    font-size: 15px
+    border: 1px solid #d8d8d8
+    border-radius: 50px
+    +trans(border, 0.5s, ease,0s)
+    &:focus
+        border-color: #f6931d
+
+
+.st-input_tac
+    text-align: center
+
+.st-textarea
+    width: 100%
+    min-height: 120px
+    resize: vertical
+    padding: 8px 15px
+    color: #5d5d5d
+    font-size: 15px
+    border: 1px solid #d8d8d8
+    border-radius: 20px
+    +trans(border, 0.5s, ease,0s)
+    &:focus
+        border-color: #f6931d
+
+.st-select
+    position: relative
+    cursor: pointer
+    .bs-caret
+        width: 7px
+        height: 7px
+        position: absolute
+        border-top: 2px solid #d8d8d8
+        border-right: 2px solid #d8d8d8
+        position: absolute
+        right: 15px
+        top: 50%
+        margin-top: -4px
+        +rotate(135deg)
+    .dropdown-toggle
+        text-align: left
+        background-color: inherit
+        width: 100%
+        height: 36px
+        padding: 0 15px
+        color: #5d5d5d
+        font-size: 15px
+        border: 1px solid #d8d8d8
+        border-radius: 50px
+        font-family: $font-base
+        +trans(border, 0.5s, ease,0s)
+        cursor: pointer
+        position: relative
+    div.dropdown-menu
+        position: absolute
+        left: 0
+        top: 100%
+        width: 100%
+        display: none
+        margin-top: 1px
+        z-index: 50
+    ul.dropdown-menu
+        list-style: none
+        padding: 0
+    li
+        margin-bottom: 0
+    &.open
+        div.dropdown-menu
+            display: block
+        .dropdown-toggle
+            border-color: #f6931d
+    select
+        position: absolute
+        left: 0
+        top: 0
+        opacity: 0
+        z-index: -1
+    .dropdown-menu.inner
+        border: 1px solid #d8d8d8
+        border-radius: 2px
+        background-color: #fff
+        a
+            display: block
+            padding: 7px 10px
+            +trans()
+            &:hover
+                background-color: #fbd4a5
+
+
+.checkbox-label
+    position: relative
+    display: flex
+    cursor: pointer
+
+.checkbox-label_to-order
+    font-size: 13px
+    color: #8d8e8f
+
+.checkbox-label__text
+    line-height: 1.2em
+    margin-left: 10px
+
+
+.st-radio
+    position: relative
+    width: 14px
+    height: 14px
+    border: 1px solid $grey
+    -webkit-transition: all 0.3s ease 0s
+    -moz-transition: all 0.3s ease 0s
+    -ms-transition: all 0.3s ease 0s
+    -o-transition: all 0.3s ease 0s
+    transition: all 0.3s ease 0s
+    border-radius: 50%
+    display: inline-block
+    vertical-align: middle
+    &:hover
+        border: 1px solid $orange
+
+
+.st-radio__icon
+    position: absolute
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    margin-top: -4px
+    margin-left: -4px
+    top: 50%
+    left: 50%
+    display: inline-block
+    vertical-align: middle
+    -webkit-transition: all 0.3s ease 0s
+    -moz-transition: all 0.3s ease 0s
+    -ms-transition: all 0.3s ease 0s
+    -o-transition: all 0.3s ease 0s
+    transition: all 0.3s ease 0s
+
+.st-radio__input
+    width: 100%
+    height: 100%
+    opacity: 0
+    margin: 0
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 200
+    cursor: pointer
+    &:checked + .st-radio__icon
+        background: #f6931d
+
+
+.radio-list__item
+    display: inline-block
+    vertical-align: middle
+    margin-right: 20px
+    &:last-child
+        margin-right: 0
+
+
+.st-radio-label
+    &:hover
+        .st-radio
+            border-color: $orange
+
+        
+.st-radio-label__text
+    display: inline-block
+    vertical-align: middle
+    font-size: 14px
+        
+.radio-label
+    position: relative
+    display: inline-block
+    padding-left: 20px
+    &:hover
+        .st-radio
+            border-color: $orange
+
+.st-checkbox
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    &__input
+        width: 100%
+        height: 100%
+        opacity: 0
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 200
+        cursor: pointer
+        margin: 0
+        &:hover + .st-checkbox__icon
+            color: $orange
+        &:checked + .st-checkbox__icon
+            &:before
+                content: '\e912'
+                font-family: $font-icon
+                color: $orange
+                position: relative
+                z-index: 0
+            &:after
+                margin-left: -1em
+                content: '\e913'
+                font-family: $font-icon
+                color: #fff
+                position: relative
+                z-index: 10
+    &__icon
+        display: inline-block
+        +trans()
+        &:before
+            content: '\e914'
+            font-family: $font-icon
+
+
+.price-reset-btn
+    display: inline-block
+    vertical-align: middle
+    position: relative
+    padding-left: 22px
+    cursor: pointer
+    white-space: nowrap
+    &:before
+        content: '\e927'
+        font-family: 'ico'
+        position: absolute
+        left: 0
+        top: 0
+        +pos(tm)
+    &:hover
+        .price-reset-btn__text
+            border-bottom: 2px dotted transparent
+
+.price-reset-btn__text
+    text-transform: uppercase
+    font-size: 12px
+    border-bottom: 2px dotted #5d5d5d
+
+.row
+    display: flex
+    justify-content: space-between
+    align-items: start
+    width: 100%
+
+.row__col-left
+    min-width: 220px
+    max-width: 220px
+    padding-right: 20px
+
+.row__col-right
+    flex-grow: 1

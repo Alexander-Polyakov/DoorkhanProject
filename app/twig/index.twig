@@ -1,0 +1,261 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Главная страница{% endblock %}
+
+
+{% block content %}
+{% include "widgets/site-header.twig" %}
+<main class="main">
+    <div class="container">
+        <div class="main__breadcrumbs mobile-hidden">
+            {% include "widgets/breadcrumb.twig" %}
+        </div>
+
+        <div class="main__title desktop-hidden tab-hidden mobile-visible">
+            <div class="main-title main-title_no-arrow">
+                <h1 class="main-title__text">каталог</h1>
+            </div>
+        </div>
+
+
+
+        <div class="main__content">
+            <div class="row">
+                <div class="row__col-left mobile-hidden">
+                    <div class="sidebar">
+                        <ul class="cat-menu">
+                            <li class="cat-menu__item cat-menu__item_active cat-menu__item_first-lvl">
+                                <div class="cat-menu__item-title">
+                                    <a class="cat-menu__title-link" href="#">Гаражные ворота</a>
+                                </div>
+                                <ul class="cat-menu cat-menu_sectional">
+                                    <li class="cat-menu__item">
+                                        <div class="cat-menu__section-title">Сдвижные ворота</div>
+                                        <div class="cat-menu__item-content">
+                                            <ul class="cat-menu cat-menu_gray">
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Ворота «Revolution»</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Панель «Доска»</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Панель «Филенка»</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Со встроенной калиткой</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Premium classic</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Premium hi-tech</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <div class="cat-menu__gray-title">Комбинированное полотно:</div>
+                                                    <div class="cat-menu__item-content">
+                                                        <ul class="cat-menu cat-menu_gray">
+                                                            <li class="cat-menu__item">
+                                                                <a class="cat-menu__item-link" href="#">С решеткой</a>
+                                                            </li>
+                                                            <li class="cat-menu__item">
+                                                                <a class="cat-menu__item-link" href="#">С пиками</a>
+                                                            </li>
+                                                            <li class="cat-menu__item">
+                                                                <a class="cat-menu__item-link" href="#">Арочное с пиками</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="cat-menu__item">
+                                        <div class="cat-menu__section-title">Распашные ворота</div>
+                                        <div class="cat-menu__item-content">
+                                            <ul class="cat-menu cat-menu_gray">
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Ворота «Revolution»</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Панель «Доска»</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Панель «Филенка»</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Со встроенной калиткой</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Premium classic</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <a class="cat-menu__item-link" href="#">Premium hi-tech</a>
+                                                </li>
+                                                <li class="cat-menu__item">
+                                                    <div class="cat-menu__gray-title">Комбинированное полотно:</div>
+                                                    <div class="cat-menu__item-content">
+                                                        <ul class="cat-menu cat-menu_gray">
+                                                            <li class="cat-menu__item">
+                                                                <a class="cat-menu__item-link" href="#">С решеткой</a>
+                                                            </li>
+                                                            <li class="cat-menu__item">
+                                                                <a class="cat-menu__item-link" href="#">С пиками</a>
+                                                            </li>
+                                                            <li class="cat-menu__item">
+                                                                <a class="cat-menu__item-link" href="#">Арочное с пиками</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="cat-menu__item cat-menu__item_first-lvl">
+                                <div class="cat-menu__item-title">
+                                    <a class="cat-menu__title-link" href="#">Гаражные ворота</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="row__col-right">
+                    <div class="index-page-content">
+                        <div class="index-page-content__advantages advantages mobile-hidden">
+                            <div class="advantages__item">
+                                <div class="advantages-item">
+                                    <div class="advantages-item__header">
+                                        <div class="advantages-item__circle"></div>
+                                    </div>
+                                    <div class="advantages__name">Покупка напрямую <br> с завода</div>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages-item">
+                                    <div class="advantages-item__header">
+                                        <div class="advantages-item__circle"></div>
+                                    </div>
+                                    <div class="advantages__name">Лучшая цена</div>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages-item">
+                                    <div class="advantages-item__header">
+                                        <div class="advantages-item__circle"></div>
+                                    </div>
+                                    <div class="advantages__name">Финансовая гарантия <br> выполнения заказа</div>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages-item">
+                                    <div class="advantages-item__header">
+                                        <div class="advantages-item__circle"></div>
+                                    </div>
+                                    <div class="advantages__name">Контроль <br> качества</div>
+                                </div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages-item">
+                                    <div class="advantages-item__header">
+                                        <div class="advantages-item__circle"></div>
+                                    </div>
+                                    <div class="advantages__name">Дополнительный срок <br> гарантии от производителя</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="index-page-content__accordion mobile-hidden">
+                            <div class="st-accordion" role="tablist">
+                            <div class="st-accordion__header collapsed" role="tab" data-toggle="collapse" data-target="#advantages-list" aria-expanded="false" aria-controls="advantages-list">
+                                <div class="st-accordion__title">Почему покупают у DoorHan?</div>
+                            </div>
+                            <div class="collapse" id="advantages-list" role="tabpanel">
+                                <div class="st-accordion__content">
+                                    <ul>
+                                        <li>Самый широкий ассортимент</li>
+                                        <li>Адаптация к российским условиям эксплуатации</li>
+                                        <li>Политика по качеству компании направлена на взаимовыгодные отношения с каждым нашим
+                                            клиентом, минимизацию проблем, качественное и своевременное обслуживание</li>
+                                        <li>Развитая сеть сервисных центров и техническая поддержка.</li>
+                                        <li>Идеальная цена за современный продукт</li>
+                                        <li>Минимальные сроки производства.</li>
+                                        <li>10-летний опыт работы</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="index-page-content__products products">
+                            <section class="products__section">
+                                <div class="products__section-title">Сдвижные ворота</div>
+                                <div class="products-grid">
+                                    {% for i in 1..4 %}
+                                        <div class="products-grid__item">
+                                            <a href="#" class="product">
+                                                <div class="product__size"></div>
+                                                <div class="product__content">
+                                                    <div class="product__header">
+                                                        <div class="product__title">ВОРОТА «REVOLUTION»</div>
+                                                        <div class="product__descr-popup">
+                                                            <div class="product__descr">
+                                                                <p>Калитки размеров: 700 x 2000, 800 x 2100,</p>
+                                                                <p>800 x 2200</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product__preview">
+                                                        <img class="product__image" src="images/products/product1.jpg" alt="">
+                                                    </div>
+                                                    <div class="product__footer">
+                                                        <p class="product__price">от 42 000 р</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </section>
+                            <section class="products__section">
+                                <div class="products__section-title">Распашные ворота</div>
+                                <div class="products-grid">
+                                    {% for i in 1..4 %}
+                                        <div class="products-grid__item">
+                                            <a href="#" class="product">
+                                                <div class="product__size"></div>
+                                                <div class="product__content">
+                                                    <div class="product__header">
+                                                        <div class="product__title">ВОРОТА «REVOLUTION»</div>
+                                                        <div class="product__descr-popup">
+                                                            <div class="product__descr">
+                                                                <p>Калитки размеров: 700 x 2000, 800 x 2100,</p>
+                                                                <p>800 x 2200</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product__preview">
+                                                        <img class="product__image" src="images/products/product1.jpg" alt="">
+                                                    </div>
+                                                    <div class="product__footer">
+                                                        <p class="product__price">от 42 000 р</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+{% endblock %}

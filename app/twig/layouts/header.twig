@@ -1,0 +1,170 @@
+<div class="js-top-panel-placeholder top-panel-placeholder"></div>
+<div class="top-panel-wrapper">
+    {% if secondHeader == 'true' %}
+    <div class="top-panel">
+        <div class="top-panel__container container">
+            <div class="top-panel__left">
+                <div class="selected-city">
+                    <div class="selected-city__default">
+                        <div class="selected-city__main-text">
+                            <a class="js-open-popup selected-city__city-name" data-open-popup="cities" href="#">Гедеоновка</a>
+                        </div>
+                        <div class="selected-city__more-text">Представительство: Смоленск</div>
+                    </div>
+                </div>
+                <form class="js-search-form search">
+                    <div class="js-search-popup search__input-popup">
+                        <input class="js-search-input search__input" type="text">
+                    </div>
+                    <button class="js-search-submit search__button"></button>
+                </form>
+            </div>
+            <div>
+                <div class="header-nav">
+                    <div class="header-nav__item">
+                        <div class="for-clients">
+                            <a class="tdu-link" href="#" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Для покупателей</a>
+                            <div class="for-clients__dropdown" aria-labelledby="drop1">
+                                <ul class="for-clients-menu">
+                                    <li class="for-clients-menu__item">
+                                        <a class="for-clients-menu__link" href="#">Гарантии</a>
+                                    </li>
+                                    <li class="for-clients-menu__item">
+                                        <a class="for-clients-menu__link" href="#">Как заказать</a>
+                                    </li>
+                                    <li class="for-clients-menu__item">
+                                        <a class="for-clients-menu__link" href="#">Контакты</a>
+                                    </li>
+                                    <li class="for-clients-menu__item">
+                                        <a class="for-clients-menu__link" href="#">О компании</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="header-nav__item">
+                        <div class="contacts">
+                            <div class="contacts__item">
+                                <a class="contacts-phone" href="tel:74959332400">
+                                    <span class="contacts-phone__text">+7 495 933 24 00</span>
+                                </a>
+                            </div>
+                            <div class="contacts__item">
+                                <a class="contacts__message" href="#"></a>
+                            </div>
+                            <div class="contacts__item">
+                                <a class="contacts__skype" href="skype:asdasd?chat"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-nav__item">
+                        <a class="js-open-popup tdu-link" data-open-popup="auth" href="#">Авторизоваться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% else %}
+
+    <div class="top-panel">
+        <div class="top-panel__container container">
+            <div class="top-panel__left">
+                <div class="selected-city">
+                    <div class="selected-city__default">
+                        <div class="selected-city__main-text">
+                            <a class="js-open-popup selected-city__city-name" data-open-popup="cities" href="#">Гедеоновка</a>
+                        </div>
+                        <div class="selected-city__more-text">Представительство: Смоленск</div>
+                    </div>
+                </div>
+                <form class="js-search-form search">
+                    <div class="js-search-popup search__input-popup">
+                        <input class="js-search-input search__input" type="text">
+                    </div>
+                    <button class="js-search-submit search__button"></button>
+                </form>
+            </div>
+            <div>
+                <div class="header-nav">
+                    <div class="header-nav__item">
+                        <div class="for-clients">
+                            <a class="tdu-link" href="#" id="drop1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Для покупателей</a>
+                            <div class="for-clients__dropdown" aria-labelledby="drop1">
+                                <ul class="for-clients-menu">
+                                    <li class="for-clients-menu__item">
+                                        <a class="for-clients-menu__link" href="#">Гарантии</a>
+                                    </li>
+                                    <li class="for-clients-menu__item">
+                                        <a class="for-clients-menu__link" href="#">Как заказать</a>
+                                    </li>
+                                    <li class="for-clients-menu__item">
+                                        <a class="for-clients-menu__link" href="#">Контакты</a>
+                                    </li>
+                                    <li class="for-clients-menu__item">
+                                        <a class="for-clients-menu__link" href="#">О компании</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="header-nav__item">
+                        <div class="contacts">
+                            <div class="contacts__item">
+                                <a class="contacts-phone" href="tel:74959332400">
+                                    <span class="contacts-phone__text">+7 495 933 24 00</span>
+                                </a>
+                            </div>
+                            <div class="contacts__item">
+                                <a class="contacts__message" href="#"></a>
+                            </div>
+                            <div class="contacts__item">
+                                <a class="contacts__skype" href="skype:asdasd"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-nav__item">
+                        <a class="card-link" href="#">2 товара / 142 000 Р</a>
+                    </div>
+                    <div class="header-nav__item">
+                        <a class="js-open-popup out-link" data-open-popup="auth" href="#">Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+
+    <div class="top-panel-mobile">
+        <div class="top-panel-mobile__container container">
+            <div class="top-panel-mobile__item top-panel-mobile__item_hamburger">
+                <span class="js-open-popup navbar-toggle" data-open-popup="mobile-menu">
+                    <i class="navbar-toggle__stripe"></i>
+                    <i class="navbar-toggle__stripe"></i>
+                    <i class="navbar-toggle__stripe"></i>
+                </span>
+            </div>
+            <div class="top-panel-mobile__item top-panel-mobile__item_logo">
+                <a class="mobile-logo" href="#">
+                    <img class="mobile-logo__image" src="images/mobile-logo.png" alt="">
+                </a>
+            </div>
+            <div class="top-panel-mobile__item top-panel-mobile__item_events">
+                <div class="menu-events">
+                    <div class="menu-events__item">
+                        <div class="icon icon_cart">
+                            <span class="icon__cart-counter">2</span>
+                        </div>
+                    </div>
+                    <div class="menu-events__item">
+                        <i class="js-open-popup icon icon_search-event" data-open-popup="mobile-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

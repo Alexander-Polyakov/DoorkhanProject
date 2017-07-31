@@ -1,0 +1,2484 @@
+@import "variables"
+@import _icons.sass
+
+.ff-bold
+    font-family: $font-base-bold
+
+.flex
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+.hide
+    display: none
+
+html
+    &.popup-opened
+        overflow: hidden
+
+label
+    cursor: pointer
+
+body
+    font-family: $font-base
+    color: $black
+    font-size: 15px
+    line-height: 1.2em
+    background-color: #fff
+
+.ovh
+    overflow: hidden
+
+a
+    color: inherit
+    text-decoration: none
+
+.container
+    max-width: 975px
+    width: auto
+    padding-left: 20px
+    padding-right: 20px
+    margin-left: auto
+    margin-right: auto
+
+
+.tdu-link
+    border-bottom: 1px solid #888888
+    +trans()
+    &:hover
+        color: $orange
+        border-bottom: 1px solid $orange
+    &:active, &:focus
+        color: $light-grey
+        border-bottom: 1px solid $light-grey
+
+
+// Top Panel//
+
+.top-panel-wrapper
+    min-width: 320px
+    &.fixed
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        z-index: 300
+
+.top-panel-mobile
+    display: none
+    background-color: $darker-grey
+
+.top-panel-mobile__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.top-panel-mobile__item
+    display: inline-block
+    vertical-align: middle
+    padding: 6px
+
+.top-panel-mobile__item_hamburger
+    width: 20%
+    padding-left: 0
+
+.top-panel-mobile__item_logo
+    width: 60%
+    display: flex
+    justify-content: center
+
+.top-panel-mobile__item_events
+    padding-right: 0
+    width: 20%
+
+.for-clients
+    position: relative
+    &.open
+        .for-clients__dropdown
+            display: block
+
+.for-clients__dropdown
+    display: none
+    position: absolute
+    top: 100%
+    margin-top: 20px
+    left: -15px
+    min-width: 133px
+    
+
+.for-clients-menu
+    background: #5d5d5d
+    color: #fff
+    font-size: 13px
+    list-style: none
+    padding: 0
+
+.for-clients-menu__item
+    margin-bottom: 0
+
+.for-clients-menu__link
+    padding: 7px 10px
+    display: block
+    +trans()
+    &:hover
+        background-color: #f9bb78
+
+.top-panel
+    background-color: #5d5d5d
+    color: #fff
+    font-size: 13px
+    position: relative
+    z-index: 200
+
+.top-panel__left
+    display: flex
+    justify-content: space-between
+    flex-grow: 1
+    align-items: center
+    padding-right: 10px
+    position: relative
+
+
+.top-panel__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 5px
+    padding-bottom: 5px
+
+.selected-city__more-text
+    font-size: 12px
+    color: #8d8e8f
+
+.selected-city__main-text
+    margin-bottom: 4px
+
+.selected-city__city-name
+    position: relative
+    border-bottom: 1px dotted #ccc
+    display: inline-block
+    transition: all 0.3s ease 0s
+    &:hover
+        color: $orange
+        border-color: $orange
+    &:active, &:focus
+        border-color: $light-grey
+    &:after
+        content: '\e918'
+        font-family: 'ico'
+        position: absolute
+        right: -13px
+        top: 2px
+        font-size: 4px
+
+.header-nav
+    display: flex
+
+.header-nav__item
+    padding: 0 15px
+    border-left: 1px solid #757676
+    &:last-child
+        padding-right: 0
+
+.search
+    font-size: 0
+    display: inline-block
+    vertical-align: middle
+
+.search__button
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    width: 18px
+    height: 18px
+    background: none
+    outline: none
+    border: none
+    font-size: 17px
+    cursor: pointer
+    color: #fff
+    padding: 0
+    transition: all 0.3s ease 0s
+    &:hover
+        color: $orange
+    &:active, &:focus
+        color: $light-grey
+    &:before
+        content: '\e928'
+        font-family: "ico"
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+
+.search__input-popup
+    position: absolute
+    right: 40px
+    left: 0
+    background-color: #5D5D5D
+    opacity: 0
+    visibility: hidden
+    top: 50%
+    margin-top: -17px
+    +trans()
+    &.opened
+        visibility: visible
+        opacity: 1
+
+.search__input
+    width: 100%
+    border-radius: 50px
+    height: 34px
+    background-color: #fff
+    font-family: $font-base
+    outline: none
+    border: none
+    padding: 0 15px
+
+
+.contacts
+    display: flex
+
+.contacts__item
+    margin-right: 13px
+    &:last-child
+        margin-right: 0
+
+.contacts__link
+    transition: all 0.3s ease 0s
+    &:hover
+        color: $orange
+
+.contacts-phone
+    position: relative
+    margin-right: 7px
+    transition: all 0.3s ease 0s
+    &:active, &:focus
+        color: $light-grey
+    &:before
+        content: '\e90f'
+        font-family: "ico"
+        display: inline-block
+        vertical-align: middle
+        margin-right: 10px
+        font-size: 14px
+
+.contacts-phone__text
+    display: inline-block
+    vertical-align: middle
+
+.contacts__message
+    height: 17px
+    display: inline-block
+    position: relative
+    +trans()
+    &:hover
+        color: $orange
+    &:active, &:focus
+        color: $light-grey
+    &:before
+        content: '\e935'
+        font-family: "ico"
+        font-size: 14px
+    &_footer
+        &:active, &:focus
+            color: $darker-grey
+
+.contacts__skype
+    height: 17px
+    display: inline-block
+    vertical-align: middle
+    position: relative
+    +trans()
+    &:hover
+        color: $orange
+    &:active, &:focus
+        color: $light-grey
+    &:before
+        content: '\e92d'
+        font-family: "ico"
+        font-size: 15px
+    &_footer
+        &:active, &:focus
+            color: $darker-grey
+
+.card-link
+    position: relative
+    display: inline-block
+    border-bottom: 1px solid #888888
+    padding-bottom: 2px
+    margin-left: 25px
+    transition: all 0.3s ease 0s
+    &:hover
+        color: $orange
+        border-color: $orange
+    &:active, &:focus
+        color: $light-grey
+        border-color: $light-grey
+    &:before
+        content: '\e911'
+        font-family: "ico"
+        position: absolute
+        left: -25px
+        top: 0
+        font-size: 18px
+
+.out-link
+    position: relative
+    display: inline-block
+    border-bottom: 1px solid #888888
+    padding-bottom: 2px
+    margin-left: 22px
+    transition: all 0.3s ease 0s
+    &:hover
+        color: $orange
+        border-color: $orange
+    &:active, &:focus
+        color: $light-grey
+        border-color: $light-grey
+    &:before
+        content: '\e921'
+        font-family: "ico"
+        position: absolute
+        left: -22px
+        top: 1px
+        font-size: 14px
+
+.logo
+    display: inline-block
+    vertical-align: middle
+    font-size: 0
+    line-height: 0
+
+.logo__image
+    max-width: 200px
+    max-height: 45px
+
+.site-header
+    border-bottom: 2px solid #e2e3e3
+
+.site-header__container
+    display: flex
+    align-items: center
+    padding: 24px 0 20px
+    position: relative
+
+.site-header__left-popup
+    position: absolute
+    left: 0
+    top: -200px
+    z-index: 2
+    +trans()
+    &.opened
+        left: 0
+        top: 0
+
+.confirmation-city
+    background: #f6931d
+    padding: 20px
+    color: #fff
+    min-width: 300px
+
+.confirmation-city__header
+    margin-bottom: 20px
+
+.confirmation-city__btn-wrap
+    display: inline-block
+    vertical-align: middle
+    margin-right: 20px
+    &:last-child
+        margin-right: 0
+
+.main-nav
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    counter-reset: main_nav
+
+.m-nav-item__header
+    margin-bottom: 2px
+
+
+.main-nav__item
+    margin-right: 105px
+    position: relative
+    display: block
+    &:after
+        content: ''
+        position: absolute
+        width: 70px
+        height: 1px
+        border-bottom: 2px dotted #a9aaab
+        top: 14px
+        left: 100%
+        margin-left: 13px
+    &:last-child
+        margin-right: 0
+        &:after
+            display: none
+    &:hover
+        .m-nav-item__name
+            border-color: #e5e5e5
+    &_active
+        .m-nav-item__circle
+            background: #003e7e
+            color: #fff
+        .m-nav-item__name
+            color: #003e7e
+            border-color: transparent
+        &:hover
+            .m-nav-item__name
+                border-color: transparent
+
+.m-nav-item__circle
+    height: 30px
+    width: 30px
+    border-radius: 50%
+    background: #e5e5e5
+    display: inline-block
+    position: relative
+    transition: all 0.3s ease 0s
+    &:before
+        line-height: 30px
+        counter-increment: main_nav
+        content: counter(main_nav)
+        font-size: 14px
+
+.m-nav-item
+    text-align: center
+    color: #8d8e8f
+
+.m-nav-item__name
+    transition: all 0.3s ease 0s
+    border-bottom: 2px solid transparent
+
+
+.advantages
+    display: flex
+    justify-content: space-between
+    color: #8d8e8f
+    font-size: 13px
+
+.index-page-content__advantages
+    margin-bottom: 35px
+
+.advantages__item
+    margin-right: 30px
+    text-align: center
+    &:last-child
+        margin-right: 0
+
+.advantages__name
+    line-height: 1.2em
+
+.advantages-item__header
+    margin-bottom: 10px
+
+.advantages-item__circle
+    width: 36px
+    height: 36px
+    border-radius: 50%
+    background: #cbcbcb
+    display: inline-block
+
+
+.breadcrumbs
+    color: #cbcbcb
+    font-size: 12px
+    text-transform: uppercase
+
+.breadcrumbs__item
+    margin-right: 12px
+    color: #cbcbcb
+    border-bottom: 1px solid #cbcbcb
+    position: relative
+    -webkit-transition: all 0.5s ease 0s
+    -moz-transition: all 0.5s ease 0s
+    -ms-transition: all 0.5s ease 0s
+    -o-transition: all 0.5s ease 0s
+    transition: all 0.5s ease 0s
+    &:hover
+        color: $grey
+        border-color: #e5e5e5
+    &:active, &:focus, &.active
+        color: $darker-grey
+        border-color: transparent
+    &:after
+        content: "/"
+        position: absolute
+        top: 50%
+        right: -10px
+        transform: translateY(-50%)
+        color: #cbcbcb
+
+.breadcrumbs__item_last
+    border-bottom: 1px solid transparent
+    &:after
+        display: none
+    &:hover
+        color: #cbcbcb
+        border-bottom: 1px solid transparent
+
+.breadcrumbs__item_home
+    border-bottom: 1px solid transparent
+    margin-right: 10px
+    &:hover
+        border-bottom: 1px solid transparent
+    &:after
+        right: -7px
+
+.products__section
+    margin-bottom: 50px
+    &:last-child
+        margin-bottom: 0
+
+.products__section-title
+    font-size: 20px
+    margin-bottom: 30px
+
+.products-grid
+    margin-top: -30px
+    margin-left: -4%
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+
+.products-grid__item
+    width: 46%
+    margin-top: 30px
+    margin-left: 4%
+
+.products-grid_number_3
+    margin-left: -2.83%
+    .products-grid__item
+        width: 30.5%
+        margin-left: 2.83%
+
+.product
+    position: relative
+    display: inline-block
+    width: 100%
+    &:hover
+        .product__descr-popup
+            opacity: 1
+
+.product_small
+    .product__title
+        font-size: 13px
+        text-overflow: ellipsis
+        overflow: hidden
+        white-space: nowrap
+    .product__price
+        font-size: 13px
+        line-height: 35px
+
+.product__header
+    position: absolute
+    width: 100%
+    background-color: rgba(0,0,0,0.6)
+    top: 0
+    left: 0
+    color: #fff
+
+.product__preview
+    font-size: 0
+    line-height: 0
+    height: 100%
+
+.product__image
+    object-fit: cover
+    height: 100%
+    width: 100%
+
+.product__title
+    font-size: 15px
+    text-transform: uppercase
+    font-family: "ms-bold"
+    margin: 13px
+    max-height: 36px
+    overflow: hidden
+
+.product__descr-popup
+    font-size: 13px
+    line-height: 1.2em
+    position: absolute
+    padding: 10px 13px
+    top: 100%
+    width: 100%
+    left: 0
+    background-color: rgba(0,0,0,0.6)
+    opacity: 0
+    +trans()
+
+.product__descr
+    max-height: 47px
+    overflow: hidden
+
+.product__footer
+    position: absolute
+    left: 0
+    width: 100%
+    bottom: 0
+
+.product__content
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    overflow: hidden
+
+.product__size
+    margin-top: 70%
+
+.product__price
+    line-height: 41px
+    font-size: 18px
+    position: relative
+    font-family: 'ms-bold'
+    color: #fff
+    padding: 0 10px 0 15px
+    display: inline-block
+    background-color: #f6931d
+    &:after
+        content: ''
+        width: 40px
+        position: absolute
+        left: 100%
+        top: 0
+        bottom: 0
+        background-image: url(../images/flag.png)
+        background-position: left center
+        -webkit-background-size: auto 100%
+        background-size: auto 100%
+        background-repeat: no-repeat
+
+.site-footer__section_bg_gray
+    background: #5d5d5d
+
+.soc-block
+    display: flex
+    align-items: center
+
+.soc-nav
+    display: flex
+
+.soc-nav__item
+    transition: all 0.3s ease 0s
+    &:not(:last-child)
+        margin-right: 12px
+    &:hover
+        color: $orange
+    &:active, &:focus
+        color: $darker-grey
+
+.soc-block__title
+    margin-right: 12px
+
+.soc-nav__item_type_youtube
+    &:before
+        content: '\e936'
+        font-family: 'ico'
+        display: inline-block
+        vertical-align: middle
+
+.soc-nav__item_type_vk
+    &:before
+        content: '\e934'
+        font-family: 'ico'
+        display: inline-block
+        vertical-align: middle
+
+.soc-nav__item_type_fb
+    &:before
+        content: '\e91a'
+        font-family: 'ico'
+        display: inline-block
+        vertical-align: middle
+
+.soc-nav__item_type_tw
+    &:before
+        content: '\e932'
+        font-family: 'ico'
+        display: inline-block
+        vertical-align: middle
+
+.soc-nav__item_type_houzz
+    &:before
+        content: '\e91e'
+        font-family: 'ico'
+        display: inline-block
+        vertical-align: middle
+
+
+.white-footer
+    color: #8d8e8f
+
+.white-footer__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.card-product
+    display: flex
+    justify-content: space-between
+
+.card-product__subtitle-section
+    color: #8d8e8f
+    font-size: 12px
+    text-transform: uppercase
+    margin-bottom: 25px
+
+.card-product__section
+    padding: 45px 0
+
+.card-product__section_bb
+    border-bottom: 1px solid #f2f2f2
+
+.card-product__left-section
+    width: 73%
+
+.card-product__right-section
+    width: 24%
+
+.card-product__section-title
+    font-size: 20px
+
+.product-options
+    display: flex
+    justify-content: space-between
+
+.text15px-special
+    font-size: 15px
+    color: #303232
+    margin-bottom: 15px
+
+.select-color__info
+    font-size: 14px
+    color: $grey
+    margin-bottom: 12px
+
+.color-palette__grid
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -5px
+
+.color-palette__title
+    margin-bottom: 15px
+
+.color-palette__item
+    width: 33px
+    height: 33px
+    margin: 5px
+    position: relative
+    box-shadow: 0 0 0 1px #ccc inset
+
+.color-palette__radio
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    margin: 0
+    opacity: 0
+    z-index: 20
+    cursor: pointer
+    &:checked +
+        .color-palette__check
+            opacity: 1
+
+.color-palette__check
+    position: absolute
+    width: 2px
+    height: 2px
+    left: 50%
+    top: 50%
+    transform:  translate(-50%,-50%)
+    color: #fff
+    box-shadow: 0 0 9px 2px #000
+    -webkit-transition: all 0.5s ease 0s
+    -moz-transition: all 0.5s ease 0s
+    -ms-transition: all 0.5s ease 0s
+    -o-transition: all 0.5s ease 0s
+    transition: all 0.5s ease 0s
+    opacity: 0
+    &:before
+        content: '\e916'
+        font-family: 'ico'
+        display: inline-block
+        vertical-align: middle
+        font-size: 35px
+        position: absolute
+        left: 50%
+        top: 50%
+        transform:  translate(-50%,-50%)
+
+.product-options-item
+    width: 180px
+
+.cat-menu
+    list-style: none
+    padding: 0
+
+.cat-menu_gray
+    padding-left: 7px
+    color: #8d8e8f
+    font-size: 13px
+
+.cat-menu_sectional
+    padding-top: 15px
+
+.cat-menu__item-link
+    &:hover
+        text-decoration: underline
+    &:active
+        font-family: 'ms-bold'
+        color: #003e7e
+
+.cat-menu__section-title
+    font-size: 13px
+    color: #303232
+    margin-bottom: 12px
+
+.cat-menu__gray-title
+    margin-bottom: 12px
+
+.cat-menu__item_active
+    .cat-menu__title-link
+        color: #003e7e
+        font-family: 'ms-bold'
+        &:before
+            content: ''
+            width: 4px
+            height: 4px
+            border-top: 1px solid #003e7e
+            border-right: 1px solid #003e7e
+            position: absolute
+            top: 7px
+            left: -10px
+            -webkit-transform: rotate(45deg)
+            -moz-transform: rotate(45deg)
+            -ms-transform: rotate(45deg)
+            -o-transform: rotate(45deg)
+            transform: rotate(45deg)
+
+.cat-menu__item
+    margin-bottom: 12px
+    &:last-child
+        margin-bottom: 0
+
+.cat-menu__item_first-lvl
+    margin-bottom: 15px
+    padding-left: 10px
+
+.cat-menu__title-link
+    display: inline-block
+    vertical-align: middle
+    font-size: 15px
+    color: #303232
+    +trans()
+    position: relative
+    &:hover
+        text-decoration: underline
+    &:active
+        font-family: 'ms-bold'
+        color: #003e7e
+
+
+.index-page-content__accordion
+    margin-bottom: 25px
+    border-bottom: 1px solid  #e5e5e5
+
+.st-accordion__header
+    padding: 10px 30px 10px 0
+    cursor: pointer
+    position: relative
+    +trans()
+    &:hover
+        color: #f6931d
+        &:before
+            border-right: 1px solid #f6931d
+            border-bottom: 1px solid #f6931d
+    &:before
+        content: ''
+        width: 12px
+        height: 12px
+        position: absolute
+        right: 5px
+        top: 50%
+        margin-top: -4px
+        -webkit-transform: rotate(-135deg)
+        -moz-transform: rotate(-135deg)
+        -ms-transform: rotate(-135deg)
+        -o-transform: rotate(-135deg)
+        transform: rotate(-135pxdeg)
+        border-right: 1px solid #303232
+        border-bottom: 1px solid #303232
+        transition: all 0.3s ease 0s
+    &.collapsed
+        &:before
+            -webkit-transform: rotate(45deg)
+            -moz-transform: rotate(45deg)
+            -ms-transform: rotate(45deg)
+            -o-transform: rotate(45deg)
+            transform: rotate(45deg)
+            margin-top: -10px
+
+.st-accordion__content
+    padding: 10px 0
+
+.st-accordion__title
+    font-size: 20px
+
+.card-product__section-header
+    margin-bottom: 30px
+
+.equipment-list__item
+    width: 260px
+    display: inline-block
+    vertical-align: top
+    margin-top: 25px
+    padding-right: 15px
+
+.equipment-list
+    margin-top: -25px
+
+.card-product__equipment
+    max-width: 540px
+
+.equipment-item
+    display: flex
+    align-items: center
+
+.equipment-item__icon
+    margin-right: 10px
+    line-height: 0
+    font-size: 0
+
+.equipment-item__tooltip
+    margin-left: 5px
+
+.popover
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1010
+    display: none
+    margin-top: 10px
+
+.popover
+    .arrow
+        +arr(15,8,#f1f1f1,t)
+        position: absolute
+        bottom: 100%
+        margin-left: -7px
+
+.popover-content
+    width: 220px
+    padding: 5px 10px
+    text-align: left
+    background-color: #f1f1f1
+    color: #8d8e8f
+    font-size: 13px
+    line-height: 1.5em
+    border-radius: 10px
+    -webkit-box-shadow: 0 5px 15px 2px #ccc
+    box-shadow: 0 5px 15px 2px #ccc
+    white-space: normal
+
+
+.tooltip
+    cursor: pointer
+    color: #8d8e8f
+    font-size: 0
+    line-height: normal
+    display: inline-block
+    vertical-align: middle
+    &:before
+        content: '\e91c'
+        font-family: 'ico'
+        font-size: 15px
+    &:hover
+        color: #5d5d5d
+
+.st-slider
+    &.active
+        .slider-selection
+            background-color: #f6931d
+
+.st-slider .tooltip
+    display: none
+    
+.slider-track
+    &:hover
+        .slider-selection
+            background-color: #f6931d
+
+.st-slider__value
+    display: flex
+    justify-content: space-between
+    color: #8d8e8f
+    font-size: 14px
+    margin-bottom: 10px
+
+.slider-track
+    height: 6px
+    background: #cbcbcb
+    position: relative
+
+.slider
+    margin-bottom: 20px
+    width: 100% !important
+    padding-right: 12px
+    background: #cbcbcb
+    border-radius: 50px
+
+.slider-handle
+    width: 14px
+    height: 14px
+    border: 3px solid #cbcbcb
+    border-radius: 50%
+    background: #5d5d5d
+    position: absolute
+    top: 50%
+    margin-top: -7px
+    cursor: pointer
+
+.slider-selection
+    background: #5d5d5d
+    height: 6px
+    width: 100%
+    margin-top: -3px
+    top: 50%
+    left: 0
+    border-radius: 50px
+    +trans(background-color, 0.5s, ease, 0s)
+
+
+.st-slider
+    width: 180px
+
+.st-slider__result
+    position: relative
+    width: 110px
+
+.st-slider__result-text
+    line-height: 32px
+    position: absolute
+    right: 12px
+    font-size: 15px
+    top: 0
+
+.st-slider__result-value
+    width: 100%
+    height: 32px
+    color: #303232
+    font-size: 15px
+    padding: 0 40px 0 12px
+    outline: none
+    border: 1px solid #cbcbcb
+    border-radius: 50px
+    +trans()
+    &:focus
+        border: 1px solid $orange
+
+.slider-section__header
+    margin-bottom: 15px
+
+.slider-section__title
+    display: inline-block
+    vertical-align: middle
+    margin-right: 5px
+
+.product-options-sliders__item
+    margin-bottom: 45px
+    &:last-child
+        margin-bottom: 0
+
+.characteristics-list
+    line-height: 1.5em
+
+.characteristics-list_result
+    .characteristics-list__row:first-child
+        padding-top: 30px
+    .characteristics-list__row:last-child
+        padding-bottom: 30px
+
+.characteristics-list__row
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+    &:last-child
+        margin-bottom: 0
+
+.characteristics-list__cell
+    width: 50%
+    position: relative
+    &:first-child
+        text-align: right
+        padding-right: 20px
+        &:after
+            height: 1px
+            content: ''
+            position: absolute
+            left: 100%
+            top: 15px
+            border-bottom: 2px dotted #f2f2f2
+            width: 30px
+            margin-left: -15px
+    &:last-child
+        text-align: left
+        padding-left: 20px
+
+.banner
+    position: relative
+
+.banner_consultation
+    min-height: 80px
+
+.banner__bg
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    z-index: 10
+    -webkit-background-size: cover
+    background-size: cover
+
+.banner__content
+    position: relative
+    padding: 20px
+    z-index: 20
+
+.banner_consultation
+    .banner__content
+        padding: 20px 230px 20px 180px
+    .banner__button
+        position: absolute
+        right: 40px
+        top: 20px
+
+.banner__title
+    margin-bottom: 7px
+    font-size: 18px
+
+.banner__descr
+    font-size: 14px
+
+.banner__button
+    position: relative
+    &:before
+        content: ''
+        +sprite(airwaves)
+        position: absolute
+        bottom: -18px
+        left: -18px
+        +rotate(180deg)
+    &:after
+        content: ''
+        +sprite(airwaves)
+        position: absolute
+        top: -18px
+        right: -18px
+
+.tabs_equipment
+    .tabs__nav
+        display: none
+        padding: 0
+        list-style: none
+
+.color-palette
+    margin-bottom: 20px
+
+// POPUPS //
+.popup-menu
+    max-width: 100%
+    min-height: 100%
+    text-align: left
+    line-height: normal
+    background-color: #fff
+    padding: 40px 0 0
+    left: -100%
+    position: relative
+    width: 400px
+    font-size: 14px
+    +trans()
+
+
+.popup-menu__close
+    font-size: 10px
+    position: absolute
+    top: 10px
+    left: 10px
+
+.st-popup-list
+    list-style: none
+    padding: 0
+
+.st-popup-list_cities
+    font-size: 13px
+    margin-right: 20px
+    display: inline-block
+    vertical-align: top
+    &:last-child
+        margin-right: 0
+
+.popup-menu__select-city
+    line-height: 1.2em
+    padding: 15px 0 15px 12px
+
+.popup-menu__city-name
+    color: #5d5d5d
+    margin-bottom: 5px
+
+.popup-menu__city-info
+    color: #8d8e8f
+    font-size: 12px
+
+.st-popup-list__item
+    margin-bottom: 7px
+
+.popup__close
+    position: absolute
+    right: 18px
+    top: 18px
+    font-size: 0
+    height: 21px
+    z-index: 10
+
+.page-overlay
+    background: rgba(0, 0, 0, 0.5)
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    z-index: 100
+
+.popup-wrapper
+    visibility: hidden
+    opacity: 0
+    position: fixed
+    //padding: 15px
+    left: 0
+    top: 0
+    width: 100%
+    line-height: 100vh
+    height: 100vh
+    overflow: auto
+    overflow-y: scroll
+    text-align: center
+    z-index: 350
+    min-width: 320px
+    background: rgba(#000, 0.5)
+    +trans
+    &.opened
+        visibility: visible
+        opacity: 1
+
+        .popup
+            top: 0
+
+        .popup-menu
+            left: 0
+
+.popup-wrapper_search
+    line-height: 1.2em
+    top: 29px
+
+.mobile-search
+    min-height: 100%
+    background-color: #fff
+
+
+.popup
+    background-color: #fff
+    padding: 60px
+    position: relative
+    z-index: 200
+    top: -100px
+    display: inline-block
+    vertical-align: middle
+    line-height: normal
+    margin: 15px 0
+    text-align: left
+    +trans()
+
+.popup_city
+    max-width: 830px
+    width: 90%
+
+.list-cities
+    display: flex
+
+.list-cities-section
+    width: 225px
+
+.list-cities__big-cities
+    padding-right: 20px
+
+.list-cities__other-cities
+    width: calc(100% - 225px)
+
+.list-cities-section__title
+    color: #8d8e8f
+    font-size: 12px
+    text-transform: uppercase
+    margin-bottom: 15px
+
+.popup__title
+    margin-bottom: 45px
+
+.popup__content
+    display: flex
+    justify-content: space-between
+
+.popup_auth
+    max-width: 500px
+
+.popup__content-left
+    width: 200px
+    margin-right: 20px
+
+.popup__content-right
+    width: 160px
+
+.popup-form__input
+    margin-bottom: 15px
+    width: 165px
+
+.popup-form__input-info
+    margin-bottom: 15px
+
+.popup-form__top-info
+    font-size: 13px
+    color: #8d8e8f
+    margin-bottom: 15px
+    line-height: 1.3em
+
+.adv-popup
+    padding: 0
+    list-style: none
+
+.adv-popup-item__header
+    margin-bottom: 10px
+
+.adv-popup-item__content
+    line-height: 1.3em
+    font-size: 13px
+
+.adv-popup-item__descr
+    color: #8d8e8f
+
+.adv-popup-item
+    margin-bottom: 25px
+    &:last-child
+        margin-bottom: 0
+    
+.adv-popup-item__title
+    color: #5d5d5d
+
+// Result page//
+
+.result-mobile-form__section
+    margin-bottom: 30px
+    &:last-child
+        margin-bottom: 0
+
+.result-mobile-form__title
+    font-size: 16px
+    margin-bottom: 15px
+
+.subscribe-form__line
+    margin-bottom: 15px
+    &:last-child
+        margin-bottom: 0
+
+.result-mobile-form__descr
+    margin-bottom: 30px
+    line-height: 1.5em
+
+.product-table
+    display: table
+    width: 100%
+
+.product-table__tr
+    display: table-row
+
+.product-table__tr_collapse-toggle
+    &:hover
+        .product-table__td
+            &:last-child
+                &:before
+                    border-right: 1px solid #f6931d
+                    border-bottom: 1px solid #f6931d
+    .product-table__td
+        &:last-child
+            position: relative
+            &:before
+                content: ''
+                width: 12px
+                height: 12px
+                position: absolute
+                right: 5px
+                top: 50%
+                margin-top: -4px
+                -webkit-transform: rotate(-135deg)
+                -moz-transform: rotate(-135deg)
+                -ms-transform: rotate(-135deg)
+                -o-transform: rotate(-135deg)
+                transform: rotate(-135pxdeg)
+                border-right: 1px solid #303232
+                border-bottom: 1px solid #303232
+                transition: all 0.3s ease 0s
+    &.collapsed
+        .product-table__td
+            &:before
+                margin-top: -6px
+                -webkit-transform: rotate(45deg)
+                -moz-transform: rotate(45deg)
+                -ms-transform: rotate(45deg)
+                -o-transform: rotate(45deg)
+                transform: rotate(45deg)
+
+
+.product-table__tr_collapse-content
+    .product-table__td
+        padding: 0
+        border: none
+
+.product-table__th
+    display: table-row
+    font-size: 13px
+    color: #8d8e8f
+    .product-table__td
+        padding: 15px 0
+
+.product-table__td
+    display: table-cell
+    vertical-align: middle
+    border-bottom: 2px solid #e5e5e5
+    padding: 30px 0
+    line-height: 1.2em
+    &:nth-child(1)
+        width: 120px
+    &:nth-child(2)
+        width: 360px
+    &:nth-child(3)
+        width: 60px
+        text-align: center
+    &:nth-child(4)
+        width: 270px
+        padding-right: 55px
+        text-align: right
+
+.product-table__td-title-mobile
+    display: none
+
+.product-table__td-price
+    line-height: 1em
+    font-size: 24px
+
+.result-page__first-info
+    margin-bottom: 25px
+    color: $grey
+
+.contacts-section_result
+    padding: 28px
+    background-color: #fcdebb
+
+    
+.contacts-section__title
+    margin-bottom: 15px
+    color: #5d5d5d
+
+.contacts-section__content
+    line-height: 1.3em
+
+.result-page__contacts
+    margin-bottom: 20px
+
+.result-table-total
+    display: table
+    width: 100%
+    line-height: 1.2em
+
+.result-table-total__tr
+    display: table-row
+
+.result-table-total__td
+    display: table-cell
+    vertical-align: bottom
+    padding: 15px 0
+    text-align: right
+    &:first-child
+        padding-left: 45px
+    &:last-child
+        padding-right: 45px
+        width: 220px
+        padding-left: 20px
+
+.result-table-total__tr_bg_beige
+    background-color: #fcdebb
+
+.result-table-total__td_price
+    font-size: 30px
+    line-height: 1em
+
+.result-table-total__td_delivery-price
+    line-height: 1em
+    font-size: 18px
+    
+.result-table-total__td_vat
+    color: $grey
+    
+.result-table-total__td_vat-price
+    font-size: 18px
+    color: $grey
+    
+// Cart page//
+.card-phone-banner
+    padding: 15px
+    background-color: #e5e5e5
+    display: block
+    text-align: center
+
+.card-phone-banner__text
+    display: inline-block
+    vertical-align: middle
+    position: relative
+    padding-left: 30px
+    font-size: 19px
+    &:before
+        content: '\e90f'
+        font-family: 'ico'
+        position: absolute
+        left: 0
+        +pos(tm)
+
+
+.switchable-cont
+    position: relative
+
+.switchable-cont__content
+    display: none
+
+.switchable-cont__content_selection
+    padding: 20px 0 0 25px
+
+.switchable-cont__content_delivery
+    padding-top: 10px
+
+.delivery-descr
+    font-size: 13px
+
+.delivery-descr__title
+    margin-bottom: 10px
+
+.delivery-descr__text
+    color: $grey
+    margin-bottom: 10px
+
+.delivery-descr__price
+    font-size: 15px
+
+.delivery-descr_table
+    .delivery-descr__title
+        margin-bottom: 0
+    .delivery-descr__text
+        margin-bottom: 0
+
+.mounting-descr__title
+    margin-bottom: 10px
+    
+.mounting-descr__text
+    font-size: 13px
+    color: $grey
+    margin-bottom: 0
+
+.card-price__mounting
+    margin-bottom: 25px
+    
+.switchable-cont__input
+    position: absolute
+    opacity: 0
+    z-index: -1
+    left: 0
+    top: 0
+    margin: 0
+
+.switchable-cont__button
+    +trans()
+
+.switchable-cont__toggle
+    display: inline-block
+    vertical-align: middle
+    padding-left: 25px
+    position: relative
+    cursor: pointer
+    &:hover
+        .switchable-cont__button
+            border-color: #f6931d
+
+.switchable-cont__button_checkbox
+    width: 14px
+    height: 14px
+    border: 1px solid #cbcbcb
+    position: absolute
+    top: 1px
+    left: 0
+
+.switchable-cont__button_radio
+    width: 14px
+    height: 14px
+    border: 1px solid #cbcbcb
+    position: absolute
+    border-radius: 50%
+    top: 1px
+    left: 0
+
+.switchable-cont__input_checkbox
+    &:checked ~ .switchable-cont__toggle
+        .switchable-cont__button
+            background: #f6931d
+            border-color: #f6931d
+            &:before
+                content: '\e913'
+                font-family: $font-icon
+                color: #fff
+                position: absolute
+                +pos(m)
+        .switchable-cont__toggle-content_orange-active
+            color: #F6931D
+    &:checked ~ .switchable-cont__content
+        display: block
+
+
+.switchable-cont__button_middle
+    top: 50%
+    margin-top: -7px
+
+.switchable-cont__input_radio
+    &:checked ~ .switchable-cont__toggle
+        .switchable-cont__button
+            &:before
+                content: ''
+                width: 8px
+                height: 8px
+                background-color: #f6931d
+                position: absolute
+                border-radius: 50%
+                +pos(m)
+    &:checked ~ .switchable-cont__toggle
+        .switchable-cont__toggle-content
+            color: #303232
+        
+    
+.switchable-cont_radio
+    .switchable-cont__toggle-content
+        color: #8d8e8f
+        
+.switchable-cont__toggle-content_tooltip
+    display: inline-block
+    vertical-align: middle
+    position: relative
+    padding-right: 20px
+    font-size: 14px
+    text-transform: uppercase
+    letter-spacing: -0.3px
+    .tooltip
+        position: absolute
+        right: 0
+        margin-top: -1px
+        +pos(tm)
+
+.select-list
+    list-style: none
+    padding: 0
+
+.select-list__item
+    margin-bottom: 10px
+    &:last-child
+        margin-bottom: 0
+        padding-top: 10px
+
+.select-list__item-title
+    margin-bottom: 10px
+
+.card-price__section
+    margin-bottom: 25px
+    &:last-child
+        margin-bottom: 0
+
+.card-price__price
+    line-height: 1em
+    font-size: 30px
+    margin-bottom: 25px
+
+.card-price__reset
+    margin-bottom: 25px
+
+.card-price__reset-info
+    color: #8d8e8f
+    font-size: 13px
+    margin-bottom: 10px
+
+.card-price__delivery
+    margin-bottom: 25px
+
+.cart-table
+    display: table
+    width: 100%
+
+.cart-table__price-value
+    font-size: 24px
+    margin-bottom: 10px
+    line-height: 1em
+
+.cart-table__price-info
+    font-size: 13px
+    color: $grey
+    margin-bottom: 15px
+
+.cart-table__tr
+    display: table-row
+    &:last-child
+        .cart-table__td
+            border-bottom: none
+
+.cart-table__th
+    display: table-row
+    color: #8d8e8f
+    font-size: 13px
+    .cart-table__td
+        padding: 18px 15px
+        vertical-align: middle
+
+.cart-table__td
+    display: table-cell
+    padding: 25px 15px
+    vertical-align: top
+    border-bottom: 1px solid rgb(203,203,203)
+    position: relative
+    &:first-child
+        padding-left: 0
+        width: 160px
+    &:last-child
+        padding-right: 50px
+        text-align: right
+        width: 200px
+    &:nth-child(3)
+        text-align: center
+
+
+.cart-table__item-value
+    width: 65px
+    display: inline-block
+    vertical-align: middle
+
+.cart-table__item-price
+    padding-top: 10px
+
+
+.table-product__preview
+    margin-right: 35px
+
+.table-product__preview-image
+    object-fit: cover
+    width: 200px
+    height: 150px
+
+.cart-table__item-content
+    padding-top: 10px
+
+.table-product
+    display: flex
+
+.table-product__content
+    line-height: 1.2em
+
+.table-product__name
+    text-transform: uppercase
+    margin-bottom: 15px
+
+.table-product__options-link
+    color: #5d5d5d
+    font-size: 13px
+    &:hover
+        text-decoration: underline
+    &:active
+        text-decoration: none
+        color: #8d8e8f
+
+.cart-table__item-order
+    padding-top: 10px
+    font-size: 13px
+    color: #8d8e8f
+
+.cart-table__item-delete
+    position: absolute
+    right: 0
+    top: 28px
+    font-size: 15px
+    line-height: 0px
+    cursor: pointer
+
+.card-product__image
+    width: 100%
+
+.automatic-transmission
+    max-width: 300px
+
+.data-agreement__top-info
+    color: #8d8e8f
+    margin-bottom: 15px
+
+.no-orders__text
+    color: #8d8e8f
+    line-height: 1.5em
+    margin-bottom: 30px
+    max-width: 400px
+
+.agreement
+    max-width: 550px
+
+.agreement__iframe
+    width: 100%
+    height: 300px
+
+.agreement__iframe-wrap
+    margin-bottom: 30px
+
+.agreement__text
+    font-size: 13px
+    color: #8d8e8f
+    margin-bottom: 30px
+    line-height: 1.2em
+
+.agreement__btn-wrap_download
+    display: none
+
+.agreement__btn-wrap_pay
+    display: none
+
+//print page//
+.print-page-content
+    width: 600px
+
+.characteristics-list_print
+    font-size: 11px
+
+.characteristics-list_print
+    .characteristics-list__row
+        margin-bottom: 13px
+
+    .characteristics-list__cell:first-child:after
+        top: 10px
+
+
+.print-page-contacts
+    background-color: #e5e5e5
+    padding: 20px
+    display: flex
+    justify-content: space-between
+
+.print-page-content__section-title
+    font-size: 18px
+    margin-bottom: 15px
+
+.print-page-content__section
+    margin-bottom: 30px
+
+.print-page-content__image
+    width: 390px
+    height: auto
+    margin-right: 25px
+
+.print-page-content__preview-wrap
+    display: flex
+
+.page-title_print
+    font-size: 22px
+
+.print-page-price
+    width: 180px
+    line-height: 1em
+
+.print-page-price__title
+    font-size: 10px
+    text-transform: uppercase
+    margin-bottom: 15px
+
+.page-title-section_print
+    margin-bottom: 30px
+
+.print-page-price__price
+    font-size: 24px
+    margin-bottom: 25px
+
+.print-page-price__sectionpopup_city
+    &:last-child
+        margin-bottom: 0
+
+.print-page-price__section-title
+    font-size: 10px
+    text-transform: uppercase
+    margin-bottom: 5px
+
+.print-page-price__section-descr
+    font-size: 11px
+    margin-bottom: 5px
+
+.print-page-price__delivery-price
+    font-size: 13px
+
+.print-page-header
+    padding: 40px 0 20px
+    border-bottom: 1px solid #c6c6c7
+
+.print-page-header__container
+    display: flex
+
+.print-page-header__logo
+    margin-right: 180px
+    width: 140px
+
+.logo_print
+    width: 100%
+    height: auto
+
+.print-page-header__descr
+    font-size: 10px
+    line-height: 1.2em
+
+
+// block guarantees
+
+.main__guarantees
+    margin-bottom: 55px
+
+.guarantees__carousel
+    position: relative
+
+    .owl-prev, .owl-next
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-top: 1px solid #f6931d
+        border-left: 1px solid #f6931d
+        position: absolute
+        top: 50%
+        left: 0
+        transform: rotate(-45deg) translateY(-50%)
+        font-size: 0
+
+    .owl-next
+        border-left: none
+        border-right: 1px solid #f6931d
+        left: auto
+        right: 0
+        transform: rotate(45deg) translateY(-50%)
+
+.guarantees__item
+    padding: 18px 0 0 77px
+    margin-bottom: 33px
+    position: relative
+
+.guarantees__title-wrap
+    &:before
+        content: "\e91b"
+        font-family: 'ico'
+        position: absolute
+        top: 0
+        left: -1px
+        font-size: 56px
+        line-height: 1em
+        color: $black
+
+.guarantees__title-wrap
+    margin-bottom: 21px
+
+.guarantees__title
+    font-size: 22px
+    margin-bottom: 21px
+
+.guarantees__text
+    font-size: 15px
+    line-height: 1.5em
+    margin-bottom: 19px
+
+.guarantees__text
+    p
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+
+// block certificates
+
+.certificates__inner-wrapper
+    padding-left: 77px
+
+.certificates__title
+    display: none
+    font-size: 11px
+    text-transform: uppercase
+    margin-bottom: 20px
+
+.certificates__carousel
+    font-size: 0
+
+    .owl-prev, .owl-next
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-top: 1px solid #f6931d
+        border-left: 1px solid #f6931d
+        position: absolute
+        top: 50%
+        left: 0
+        transform: rotate(-45deg) translateY(-50%)
+        font-size: 0
+
+    .owl-next
+        border-left: none
+        border-right: 1px solid #f6931d
+        left: auto
+        right: 0
+        transform: rotate(45deg) translateY(-50%)
+        font-size: 0
+
+.certificates__item
+    display: inline-block
+    width: 14.5%
+    margin-right: 2%
+    margin-bottom: 15px
+    font-size: 14px
+    position: relative
+    &:nth-child(6n)
+        margin-right: 0
+    &:hover
+        .certificates__item-popup
+            opacity: 1
+
+
+.certificates__item-popup
+    font-size: 13px
+    line-height: 1.2em
+    position: absolute
+    padding: 10px 13px
+    top: 0
+    width: 100%
+    left: 0
+    background-color: rgba(0, 0, 0, 0.6)
+    opacity: 0
+    color: #fff
+    +trans()
+
+.certificates__img
+    width: 100%
+
+// page ask questions
+
+.attach-files_mb_30
+    margin-bottom: 30px
+
+.attach-files__header
+    display: flex
+    justify-content: space-between
+    margin-bottom: 15px
+
+.attach-files__total
+    color: #8d8e8f
+
+.attach-files__content
+    display: flex
+    justify-content: space-between
+
+.attach-files__input
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+    z-index: 5
+    cursor: pointer
+
+.attach-files__item
+    display: inline-block
+    width: 66px
+    height: 66px
+    border: 1px dashed rgb(203,203,203)
+    border-radius: 3px
+    position: relative
+    +trans
+    cursor: pointer
+
+    &:not(.active)
+
+        &:after, &:before
+            display: block
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            +transform(translate3d(-50%, -50%, 0))
+            width: 1px
+            height: 22px
+            background: #e2e2e2
+            +trans
+
+        &:before
+            width: 22px
+            height: 1px
+
+        &:hover
+            border-color: #f6931d
+
+            &:before, &:after
+                background: #f6931d
+
+    &.active
+        .attach-files__input
+            display: none
+
+.attach-files__image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.attach-files__delete
+    position: absolute
+    top: 5px
+    right: 5px
+    z-index: 5
+    color: #000
+    cursor: pointer
+
+
+
+// page order-register
+
+.order-register__sentence-text
+    display: inline-block
+    vertical-align: middle
+
+// product colorbox
+.fancybox-prev
+    left: -75px
+    span
+        visibility: visible
+        background: none
+        width: auto
+        height: auto
+        &:before
+            content: '\e910'
+            vertical-align: middle
+            color: #fff
+            font-family: $font-icon
+            font-size: 25px
+            display: inline-block
+            +transform(rotate(-180deg))
+
+.fancybox-next
+    right: -75px
+    span
+        visibility: visible
+        background: none
+        width: auto
+        height: auto
+        &:before
+            content: '\e910'
+            vertical-align: middle
+            color: #fff
+            font-family: $font-icon
+            font-size: 25px
+            display: inline-block
+
+
+.fancybox-close
+    right: -50px
+    top: -50px
+    background: none
+
+    &:before
+        content: '\e915'
+        vertical-align: middle
+        color: #fff
+        font-family: $font-icon
+        font-size: 20px
+        display: inline-block
+
+.fancybox-skin
+    padding: 0 !important
+
+// popup auth
+.popup-form__send-more
+    color: #5d5d5d
+    text-decoration: none
+    border-bottom: 1px dotted #c5c5c5
+    font-size: 13px
+
+    &:hover
+        border: none
+
+// popup geolocation
+.popup__search
+    margin-bottom: 50px
+    width: 250px
+
+.st-search-form
+    position: relative
+
+.st-input_search-city
+    height: 30px
+    font-size: 13px
+
+//&:focus
+//    & + .city-search__button
+//        left: 100%
+//        +transform(translateX(-100%))
+//        margin-left: -10px
+//        color: #737373
+
+.st-search-form__submit
+    border: none
+    background: none
+    width: auto
+    height: auto
+    padding: 0
+    font-size: 16px
+    color: #000
+    position: absolute
+    top: 50%
+    margin-top: -10px
+    line-height: 20px
+    margin-left: 0
+    right: 10px
+    cursor: pointer
+    width: 20px
+    height: 20px
+    +trans
+    &:before
+        content: '\e928'
+        font-family: 'ico'
+    &:hover
+        color: $orange
+
+.mobile-logo
+    display: inline-block
+    vertical-align: middle
+    font-size: 0
+    line-height: 0
+
+.mobile-logo__image
+    max-width: 115px
+    max-height: 15px
+    vertical-align: middle
+
+.navbar-toggle
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 19px
+    height: 14px
+    +trans()
+    cursor: pointer
+    &__stripe
+        width: 100%
+        height: 2px
+        background-color: #fff
+    &:hover
+        .navbar-toggle__stripe
+            background-color: $orange
+
+
+// popup-notification
+.popup-notification
+    color: #f6931d
+    background: #fbd3a5
+    font-size: 13px
+    padding: 10px
+    width: 90%
+    max-width: 460px
+    position: fixed
+    bottom: -100%
+    left: 50%
+    +transform(translateX(-50%))
+    text-align: center
+    z-index: 500
+    +trans
+
+    &.popup-notification_active
+        bottom: 20px
+
+// contacts/
+
+.map-section__main-info
+    margin-bottom: 42px
+
+.map-contacts__caption
+    margin-bottom: 5px
+
+.map-contacts__phone
+    font-size: 20px
+    font-family: $font-base-bold
+    line-height: 1.2em
+
+.map__title
+    font-size: 20px
+    margin-bottom: 15px
+
+.map__container
+    position: relative
+    padding: 20px 0
+
+.map__inner
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    z-index: 100
+
+.map__info
+    width: 260px
+    padding: 22px
+    background-color: #fff
+    position: relative
+    z-index: 200
+    min-height: 330px
+
+.map-info__section
+    &:not(:last-child)
+        margin-bottom: 30px
+
+.map-info__section_opacity07
+    opacity: 0.7
+
+.map-info__line
+    margin-bottom: 5px
+    &:last-child
+        margin-bottom: 0
+
+.info-item
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.info-item_title
+    font-family: $font-base-bold
+    margin-bottom: 10px
+
+.map-block:not(:last-child)
+    margin-bottom: 5px
+
+.info-item__left
+    width: 25%
+    color: $grey
+    text-align: right
+
+.info-item__right
+    width: calc(75% - 15px)
+    text-align: left
+
+
+.menu-events
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+.menu-events__item
+    padding: 0 8px
+    border-right: 1px solid #757676
+    &:last-child
+        border-right: none
+        padding-right: 0
+
+.mobile-search-form
+    position: relative
+
+.mobile-search__header
+    border-bottom: 1px solid #aeaeae
+    margin-bottom: 10px
+
+.mobile-search-form__input
+    height: 48px
+    padding: 0 100px 0 15px
+    font-size: 14px
+    width: 100%
+    outline: none
+    border: none
+    +phc(#303232)
+
+.mobile-search-form__close
+    position: absolute
+    right: 44px
+    top: 0
+    width: 44px
+    font-size: 16px
+    line-height: 48px
+    text-align: center
+
+.mobile-search-form__submit
+    position: absolute
+    right: 0
+    top: 0
+    width: 44px
+    font-size: 16px
+    line-height: 46px
+    background-color: #fff
+    outline: none
+    border: none
+    border-left: 2px solid #e5e5e5
+    padding: 0 5px 0 0
+
+.mobile-search__content
+    padding: 0 10px
+    text-align: left
+
+.mobile-search__descr
+    margin-bottom: 10px
+
+.card-price__checkboxes
+    position: relative
+
+.card-price__checkboxes-abs
+    top: 0
+    right: 65px
+    position: absolute
+
+.st-popup-list_menu
+    .st-popup-list__item
+        margin-bottom: 0
+    .st-popup-list__item_bb
+        border-bottom: 2px solid #f2f2f2
+    .st-popup-list__item
+        position: relative
+        padding-right: 30px
+        margin-bottom: 0
+        &:after
+            content: '\e910'
+            font-family: 'ico'
+            position: absolute
+            +pos(tm)
+            right: 15px
+            color: #b7b8b9
+            font-size: 14px
+    .st-popup-list__link
+        padding: 15px 0 15px 12px
+        display: block
+        font-size: 14px
+        position: relative
+        z-index: 2
+        
+    
+.st-popup-list__link
+    +trans()
+    &:hover
+        color: $orange

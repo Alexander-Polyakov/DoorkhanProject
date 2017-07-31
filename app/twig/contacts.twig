@@ -1,0 +1,93 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %} Контакты {% endblock %}
+
+
+{% block content %}
+    {% include "widgets/site-header.twig" %}
+
+    <main class="main main_pb_40">
+        <div class="container">
+
+
+            <div class="main__breadcrumbs">
+                {% include "widgets/breadcrumb.twig" %}
+            </div>
+
+
+            <div class="main__title">
+                <div class="main-title">
+                    <a class="main-title__link" href="#"></a>
+                    <h1 class="main-title__text">Контакты</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="map-section">
+            <div class="map-section__main-info">
+                <div class="container">
+                    <div class="map-contacts">
+                        <p class="map-contacts__caption">Круглосуточный заказ продукции с монтажом, сервис:</p>
+                        <p class="map-contacts__phone">8 800 200 22 08</p>
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="map">
+                    <div class="container">
+                        <p class="map__title">Офис и магазин</p>
+                    </div>
+                    <div class="map__container">
+                        <div class="container">
+                            <div class="map__info map-info">
+                                <div class="map-info__section">
+                                    <div class="map-info__line info-item">
+                                        <div class="info-item__left">Адрес</div>
+                                        <div class="info-item__right">Смоленск, ул. Лавочкина, 106</div>
+                                    </div>
+                                    <div class="map-info__line info-item">
+                                        <div class="info-item__left">Тел.</div>
+                                        <div class="info-item__right">+7 (4812) 26-82-62</div>
+                                    </div>
+                                    <div class="map-info__line info-item">
+                                        <div class="info-item__left">E-mail</div>
+                                        <div class="info-item__right">smolensk@doorhan.ru</div>
+                                    </div>
+                                </div>
+                                <div class="map-info__section">
+                                    <div class="map-info__line info-item info-item_title">
+                                        <div class="info-item__left"></div>
+                                        <div class="info-item__right">Режим работы:</div>
+                                    </div>
+                                    <div class="map-info__line info-item">
+                                        <div class="info-item__left">Пн—Пт</div>
+                                        <div class="info-item__right">9:00—18:00</div>
+                                    </div>
+                                    <div class="map-info__line info-item">
+                                        <div class="info-item__left">Сб, Вс</div>
+                                        <div class="info-item__right">9:00—16:00</div>
+                                    </div>
+                                </div>
+
+                                <div class="map-info__section map-info__section_opacity07">
+                                    <div class="map-info__line info-item">
+                                        <div class="info-item__left">ИНН</div>
+                                        <div class="info-item__right">5032136476</div>
+                                    </div>
+                                    <div class="map-info__line info-item">
+                                        <div class="info-item__left">ОГРН</div>
+                                        <div class="info-item__right">1055006349804 <br> ООО «ДорХан»</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js-contacts-map map__inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+{% endblock %}

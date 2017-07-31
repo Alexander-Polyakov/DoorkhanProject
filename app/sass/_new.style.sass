@@ -1,0 +1,295 @@
+@import mixins/mixins
+@import variables
+
+
+// block guarantees
+
+.guarantees
+    margin-bottom: 55px
+
+.guarantees__carousel
+    position: relative
+
+    .owl-prev, .owl-next
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-top: 1px solid #f6931d
+        border-left: 1px solid #f6931d
+        position: absolute
+        top: 50%
+        left: 0
+        transform: rotate(-45deg) translateY(-50%)
+        font-size: 0
+
+    .owl-next
+        border-left: none
+        border-right: 1px solid #f6931d
+        left: auto
+        right: 0
+        transform: rotate(45deg) translateY(-50%)
+
+.guarantees__item
+    padding: 18px 0 0 77px
+    margin-bottom: 33px
+    position: relative
+
+.guarantees__icon
+    position: absolute
+    top: 0
+    left: -1px
+    font-size: 56px
+    color: $txt-black
+
+.guarantees__title-wrap
+    margin-bottom: 21px
+
+.guarantees__title
+    font-family: $font-base
+    font-size: 22px
+    margin-bottom: 21px
+
+.guarantees__text
+    font-family: $font-base
+    font-size: 15px
+    line-height: 21px
+    margin-bottom: 19px
+
+.guarantees__text
+    p
+        &:last-child
+            margin-bottom: 0
+
+// block certificates
+
+.certificates__inner-wrapper
+    padding-left: 77px
+
+.certificates__title
+    display: none
+    font-family: $font-base
+    font-size: 11px
+    text-transform: uppercase
+    margin-bottom: 20px
+
+.certificates__carousel
+    font-size: 0
+
+    .owl-prev, .owl-next
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-top: 1px solid #f6931d
+        border-left: 1px solid #f6931d
+        position: absolute
+        top: 50%
+        left: 0
+        transform: rotate(-45deg) translateY(-50%)
+        font-size: 0
+
+    .owl-next
+        border-left: none
+        border-right: 1px solid #f6931d
+        left: auto
+        right: 0
+        transform: rotate(45deg) translateY(-50%)
+        font-size: 0
+
+.certificates__item
+    display: inline-block
+    width: 14.5%
+    margin-right: 2%
+    margin-bottom: 15px
+    font-size: 14px
+    &:nth-child(6n)
+        margin-right: 0
+
+.certificates__img
+    width: 100%
+
+// page ask questions
+
+.attach-files_mb_30
+    margin-bottom: 30px
+
+.attach-files__header
+    display: flex
+    justify-content: space-between
+    margin-bottom: 15px
+    
+.attach-files__total
+    color: #8d8e8f
+
+.attach-files__content
+    display: flex
+    justify-content: space-between
+
+.attach-file__input
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+    z-index: 5
+
+.attach-files__item
+    display: inline-block
+    width: 66px
+    height: 66px
+    border: 1px dashed #e2e2e2
+    border-radius: 3px
+    position: relative
+
+    &:after, &:before
+        display: block
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        +transform(translate3d(-50%, -50%, 0))
+        width: 1px
+        height: 22px
+        background: #e2e2e2
+
+    &:before
+        width: 22px
+        height: 1px
+
+.attach-files__image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.attach-files__delete
+    position: absolute
+    top: 5px
+    right: 5px
+    z-index: 5
+    color: #000
+    cursor: pointer
+
+
+
+// page order-register
+
+.order-register__sentence-text
+    display: inline-block
+    vertical-align: middle
+
+// product colorbox
+.fancybox-prev
+    left: -75px
+    span
+        visibility: visible
+        background: none
+        width: auto
+        height: auto
+        &:before
+            content: '\e910'
+            vertical-align: middle
+            color: #fff
+            font-family: $font-icon
+            font-size: 25px
+            display: inline-block
+            +transform(rotate(-180deg))
+
+.fancybox-next
+    right: -75px
+    span
+        visibility: visible
+        background: none
+        width: auto
+        height: auto
+        &:before
+            content: '\e910'
+            vertical-align: middle
+            color: #fff
+            font-family: $font-icon
+            font-size: 25px
+            display: inline-block
+
+
+.fancybox-close
+    right: -50px
+    top: -50px
+    background: none
+
+    &:before
+        content: '\e915'
+        vertical-align: middle
+        color: #fff
+        font-family: $font-icon
+        font-size: 20px
+        display: inline-block
+
+.fancybox-skin
+    padding: 0 !important
+    
+// popup auth
+.popup-auth-form__send-more
+    color: #5d5d5d
+    text-decoration: none
+    border-bottom: 1px dotted #c5c5c5
+    font-size: 13px
+
+    &:hover
+        border: none
+
+// popup geolocation
+.popup-city__search
+    margin-bottom: 50px
+
+.city-search__form
+    position: relative
+    display: inline-block
+    width: 250px
+
+.city-search__input
+    height: 30px
+    font-size: 13px
+
+    //&:focus
+    //    & + .city-search__button
+    //        left: 100%
+    //        +transform(translateX(-100%))
+    //        margin-left: -10px
+    //        color: #737373
+
+.city-search__button
+    border: none
+    background: none
+    width: auto
+    height: auto
+    padding: 0
+    font-size: 16px
+    color: #000
+    position: absolute
+    top: 0
+    line-height: 30px
+    margin-left: 0
+    right: 10px
+    cursor: pointer
+    +trans
+
+// popup-notification
+.popup-notification
+    color: #f6931d
+    background: #fbd3a5
+    font-size: 13px
+    padding: 10px
+    width: 90%
+    max-width: 460px
+    position: fixed
+    bottom: -100%
+    left: 50%
+    +transform(translateX(-50%))
+    text-align: center
+    z-index: 500
+    +trans
+
+    &.popup-notification_active
+        bottom: 20px

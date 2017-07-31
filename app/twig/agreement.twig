@@ -1,0 +1,42 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Карточка товара{% endblock %}
+
+
+{% block content %}
+    {% include "widgets/site-header.twig" %}
+
+    <main class="main">
+        <div class="container">
+
+            <div class="main__breadcrumbs">
+                {% include "widgets/breadcrumb.twig" %}
+            </div>
+
+            <div class="main__title">
+                <div class="main-title">
+                    <a class="main-title__link" href="#"></a>
+                    <h1 class="main-title__text">оформление договора</h1>
+                </div>
+            </div>
+
+            <div class="main__content">
+                <div class="agreement">
+                    <div class="agreement__iframe-wrap">
+                        <iframe class="agreement__iframe" src="docs/test.pdf"></iframe>
+                    </div>
+                    <div class="agreement__btn-wrap agreement__btn-wrap_download">
+                        <a class="btn btn_gray btn_mobile-full" href="#">Скачать pdf</a>
+                    </div>
+                    <div class="agreement__text">Нажимая кнопку «Оплатить» вы соглашаетесь со всеми условиями настоящего Договора.</div>
+                    <div class="agreement__btn-wrap agreement__btn-wrap_next">
+                        <a class="btn btn_orange btn_mobile-full" href="#">Продолжить</a>
+                    </div>
+                    <div class="agreement__btn-wrap agreement__btn-wrap_pay">
+                        <a class="btn btn_orange btn_mobile-full" href="#">Оплатить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

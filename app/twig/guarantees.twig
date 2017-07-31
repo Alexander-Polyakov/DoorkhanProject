@@ -1,0 +1,163 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %}Гарантии{% endblock %}
+
+{% block content %}
+	{% include "widgets/site-header.twig" %}
+
+	<main class="main">
+		<div class="container">
+			<div class="main__breadcrumbs">
+				{% include "widgets/breadcrumb.twig" %}
+			</div>
+
+			<div class="main__title">
+				<div class="main-title">
+					<a class="main-title__link" href="#"></a>
+					<h1 class="main-title__text">Гарантии</h1>
+				</div>
+			</div>
+
+			<div class="main__content">
+				<div class="guarantees">
+					<div class="guarantees__carousel">
+						<div class="guarantees__item">
+							<div class="guarantees__title-wrap">
+								<div class="guarantees__title">Финансовые гарантии</div>
+							</div>
+							<div class="guarantees__text">
+								<p>Мы гарантируем добросовестное выполнение договорных обязательств.<br>Политика
+									по качеству компании направлена на взаимовыгодные отношения с каждым нашим клиентом, минимизацию
+									проблем, качественное и своевременное обслуживание.</p>
+							</div>
+						</div>
+						<div class="guarantees__item">
+							<div class="guarantees__title-wrap">
+								<div class="guarantees__title">Гарантия на конструкции</div>
+							</div>
+							<div class="guarantees__text">
+								<p>Высокотехнологичное производство, современные автоматические линии по
+									изготовлению и сборке продукции,
+									использование качественных и экологически чистых материалов, а также контроль соответствия выпускаемой
+									продукции принятым российским и европейским стандартам качества и безопасности, обеспечивают длительный
+									срок службы и надежность работы наших изделий.
+								</p>
+								<p>Мы гарантируем работоспособность изделий на протяжении всего гарантийного
+									периода, при условии целевого
+									использования, соблюдения правил монтажа, эксплуатации и своевременного технического обслуживания.</p>
+							</div>
+						</div>
+						<div class="guarantees__item">
+							<div class="guarantees__title-wrap">
+								<div class="guarantees__title">Гарантия на автоматику</div>
+							</div>
+							<div class="guarantees__text">
+								<p>На всю автоматику мы даем трехлетнюю гарантию комфортного использования,
+									безупречного качества, и обеспечения безопасности на вашем объекте при условии целевого использования и
+									соблюдения правил эксплуатации.
+								</p>
+							</div>
+						</div>
+						<div class="guarantees__item">
+							<div class="guarantees__title-wrap">
+								<div class="guarantees__title">Гарантийный ремонт</div>
+							</div>
+							<div class="guarantees__text">
+								<p>Гарантийный ремонт производится компанией, осуществившей продажу изделий
+									или сертифицированным
+									сервисным центром DoorHan, имеющим соответствующее разрешение. Перечень сервисных центров представлен
+									на главном сайте компании www.doorhan.ru, а также на нашем сайте в разделе «Сервис».
+								</p>
+								<p>Подробную информацию, включая период гарантийного обслуживания продукции
+									DoorHan, вы можете найти
+									в пакете документации, входящем в комплект поставки.</p>
+							</div>
+						</div>
+						<div class="guarantees__item">
+							<div class="guarantees__title-wrap">
+								<div class="guarantees__title">Гарантия качества</div>
+							</div>
+							<div class="guarantees__text">
+								<p>Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары, соответствуют международным и европейским нормам и имеют сертификаты соответствия EN и CE
+									компаний TUV SUD и SGS, признанных мировыми лидерами в сфере инспекционных услуг, экспертиз и
+									сертификации.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="certificates">
+					<div class="certificates__title">Сертификаты</div>
+					<div class="certificates__inner-wrapper">
+						<div class="certificates__carousel">
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-1.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-1.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-2.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-2.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-3.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-3.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-4.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-4.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-5.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-5.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-6.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-6.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-1.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-1.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-2.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-2.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-3.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-3.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-4.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-4.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-5.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-5.jpg" alt="">
+							</a>
+							<a class="certificates__item" data-fancybox-group="certificates" data-colorbox href="images/certificates/certificate-6.jpg">
+								<div class="certificates__item-popup">Все виды продукции DoorHan, включая электроприводы и автоматические
+									аксессуары.</div>
+								<img class="certificates__img" src="images/certificates/certificate-6.jpg" alt="">
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+{% endblock %}

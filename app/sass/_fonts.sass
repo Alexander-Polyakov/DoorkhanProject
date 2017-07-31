@@ -1,0 +1,11 @@
+=font($alias, $name)
+    @font-face
+        font-family: $alias
+        src: url("../fonts/" + $name + ".eot")
+        src: url("../fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("../fonts/" + $name + ".woff") format("woff"), url("../fonts/" + $name + ".ttf") format("truetype")
+        font-weight: normal
+        font-style: normal
+
++font("ms-reg", "TrebuchetMS")
++font("ms-bold", "TrebuchetMS-Bold")
++font("ico", "icons/icomoon")

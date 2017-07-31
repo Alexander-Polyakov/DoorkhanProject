@@ -1,0 +1,375 @@
+@import ../mixins/mixins
+@import ../variables
+
+@media screen and (max-width: 900px)
+    .top-panel-mobile
+        display: block
+
+    .top-panel
+        display: none
+
+    .product__descr br
+        display: none
+
+@media screen and (max-width: $screen-sm)
+    .total-price-panel
+        align-items: center
+
+    //________________________________________________
+    //RESULT
+
+
+
+    .result__table-cell:nth-child(4)
+        padding-right: 0
+        text-align: left
+
+    .result__table-cell-mobile-title
+        display: block
+        width: 100%
+
+    .result__destination
+        font-size: 11px
+
+    .result__notification-block
+        padding: 13px
+        font-size: 13px
+
+    .details-cell-wrapper
+        font-size: 13px
+        line-height: 16px
+
+    .result__table-row.result__table-row_title
+        display: none
+
+    .result__table-cell
+        &:first-child
+            width: 100%
+        &:nth-child(2)
+            width: 100%
+        &:nth-child(3)
+            width: 70%
+        &:nth-child(4)
+            width: 30%
+        &:not(:last-child)
+            .result__table-cell
+                border-bottom: none
+
+    .result__table-row
+        padding-right: 0
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+
+    .result__table-row-details-row
+        border-top: 2px solid #cccccc
+        .result__table-cell
+            &:not(.result__table-cell-details-cell)
+                display: none
+    //________________________________________________
+
+
+    .site-header
+        display: none
+
+    .entry-block-upload-form__listing
+        justify-content: space-between
+
+    .content-title
+        margin-bottom: 20px
+        &_main
+            padding-left: 0
+
+    .content-title__header
+        font-family: $font-base
+        font-size: 18px
+        &_desk-inv
+            display: block
+
+    .content-title__text_desk-inv
+        display: inline
+
+    .content-title__text_mob-inv
+        display: none
+
+    .content-title__link
+        display: block
+        &_invisible
+            display: none
+
+    .standard-form-buttons
+        justify-content: space-between
+        display: flex
+
+    .standard-form__label_mobile_visible
+        display: block
+
+    .standard-form__item-right
+        width: 100%
+        flex-direction: column
+        .standard-form__label
+            margin-bottom: 15px
+
+    .standard-form__item-left
+        display: none
+
+    .white-footer__section_sm_hidden
+        display: none
+
+    .breadcrumbs-section
+        display: none
+
+    .index-content__sidebar
+        display: none
+
+    .index-content__main
+        display: block //fwefwefw
+        width: 100%
+
+
+    .advantages
+        display: none
+
+    .advantages-accordion
+        display: none
+
+    .title20px
+        margin-bottom: 0
+
+    .products-grid
+        margin-top: 0
+
+    .main-content
+        padding-bottom: 33px
+
+
+
+    //__________________________________________________
+    //Calculation
+
+    .calculation__goods-name
+        padding-right: 15px
+
+    .calculation__close
+        display: none
+
+    .total-price__delivery
+        justify-content: flex-start
+
+    .data-agreement__mobile-block
+        display: block
+
+    .st-checkbox
+        p
+            display: none
+
+    .calculation__goods-options
+        display: none
+
+    .calculation__goods-name
+        font-size: 13px
+        line-height: 18px
+        padding-bottom: 0
+
+    .calculation__goods-price-value
+        font-size: 20px
+        margin-bottom: 2px
+
+    .calculation__goods-refresh-date
+        font-size: 12px
+        margin-bottom: 17px
+
+    .calculation__table-row_title //wr
+        .calculation__table-cell
+            &:nth-child(1n)
+                display: block
+            &:nth-child(2n)
+                display: none
+            &:nth-child(3n)
+                display: none
+            &:nth-child(4n)
+                display: none
+
+    .calculation__table-row
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    .calculation__table
+        &-cell
+            padding-top: 22px
+            display: block
+            padding-bottom: 0
+            &:first-child
+                width: 25px
+            &:nth-child(2)
+                display: flex
+                justify-content: space-between
+                width: calc(100% - 25px)
+            &:nth-child(3)
+                display: none
+            &:last-child
+                padding-top: 0
+                padding-bottom: 0
+                display: flex
+                width: 100%
+                justify-content: flex-end
+
+    .calculation__goods-price-wrapper
+        position: relative
+        top: -19px
+        width: calc(100% - 145px)
+        text-align: left
+
+    .calculation__goods-name-wrapper
+        width: calc(100% - 120px)
+        position: relative
+        &:after
+            content: '\e915'
+            font-family: $font-icon
+            color: $txt-black
+            position: absolute
+            top: -2px
+            right: 2px
+
+
+    .total-price-panel
+        text-align: initial
+        display: flex
+        justify-content: space-between
+        padding: 18px 14px 18px 14px
+        &__text
+            margin-right: 0
+            font-size: 13px
+        &__price
+            font-size: 28px
+
+    .calculation__goods-img
+        margin-right: 22px
+        &-wrapper
+            width: 100px
+            height: 73px
+
+
+    .calculation__table-row_title
+        .calculation__table-cell
+            width: 100%
+        .st-checkbox
+            p
+                display: block
+
+
+@media screen and (max-width: $screen-xs)
+
+    .result__table
+        padding-top: 10px
+
+
+    .result__table-cell
+        &:not(.result__table-cell-details-cell)
+            padding-top: 5px
+            padding-bottom: 5px
+
+    .result__table-cell-details-cell
+        padding-bottom: 15px
+        padding-top: 15px
+
+    .content-title
+        margin-bottom: 26px
+
+    .result-mobile-form
+        display: block
+
+    .result__destination
+        margin-bottom: 15px
+
+    .result__buttons
+        padding-right: 0
+
+    .total-price__delivery
+        display: none
+
+    .total-price__price-nds
+        display: none
+
+    .total-price__delivery-mobile
+        display: block
+
+    .total-price-panel
+        align-items: flex-end
+
+    br.visible-mobile
+        display: block
+
+    .breadcrumbs-section
+        display: none
+
+    .main-content
+        padding: 10px 0 30px 0
+
+    .order-register__dealer-info
+        color: $txt-black
+        &_xs_visible
+            display: block
+
+    .standard-form-buttons
+        flex-direction: column
+
+    .entry-block-upload-form__item:not(:last-child)
+        margin-right: 0
+
+    .order-register, .standard-form, .calculation, .result
+        &__buttons
+            .btn
+                width: 100%
+                &:not(:last-child)
+                    margin-bottom: 17px
+
+    .entry-block-upload-form__item
+        width: 85px
+        height: 85px
+
+    .order-register__sentence-text
+        font-size: 13px
+
+    .entry-block-upload-form__title
+        &:before
+            display: none
+
+    .entry-block-upload-form__listing
+        justify-content: space-between
+
+    .soc-block__title
+        display: none
+
+    .soc-nav__item
+        font-size: 16px
+
+    .white-footer
+        display: flex
+        justify-content: center
+
+    .btn_xs_hidden, .entry-block-upload-form__item_xs_hidden, .gray-footer__section_xs_hidden
+        display: none
+
+    .title20px
+        display: none
+
+    .products__section
+        margin-bottom: 0
+
+    .products-grid
+        margin-top: 10px
+        display: block
+
+    .products-grid__item
+        display: block
+        width: 100%
+        max-width: 480px
+        margin: 0 auto 14px auto
+        &:last-child
+            margin-bottom: 0
+
+    .standard-form_xs_hidden
+        display: none
+
